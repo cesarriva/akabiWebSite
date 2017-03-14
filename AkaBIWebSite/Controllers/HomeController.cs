@@ -10,7 +10,18 @@ namespace AkaBIWebSite.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "AkaBI S.a.rl";
             return View();
+        }
+
+        public ActionResult Header()
+        {
+            return PartialView("_Header");
+        }
+
+        public ActionResult Footer()
+        {
+            return PartialView("_Footer");
         }
     }
 }
