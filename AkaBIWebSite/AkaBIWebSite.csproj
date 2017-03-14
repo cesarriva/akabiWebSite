@@ -120,7 +120,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CareerController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OfficesController.cs" />
+    <Compile Include="Controllers\OurCompanyController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -139,6 +144,7 @@
     <Content Include="Content\css\themes\sky-blue.css" />
     <Content Include="Content\images\akabi_logo_transparent.png" />
     <Content Include="Content\images\akabi_logo_transparent50.png" />
+    <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\small-map.png" />
     <Content Include="Content\images\small-logo.png" />
     <Content Include="Content\images\xs-logo.png" />
@@ -190,6 +196,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_Header.cshtml" />
     <Content Include="Views\Home\_Footer.cshtml" />
+    <Content Include="Views\OurCompany\Index.cshtml" />
+    <Content Include="Views\Services\BiServices.cshtml" />
+    <Content Include="Views\Services\DevelopmentServices.cshtml" />
+    <Content Include="Views\Career\Index.cshtml" />
+    <Content Include="Views\Offices\Index.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

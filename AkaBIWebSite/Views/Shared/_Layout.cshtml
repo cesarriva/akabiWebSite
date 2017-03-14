@@ -9,6 +9,7 @@
 
     <!-- Responsive Metatag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico" type="image/x-icon">
 
     @Styles.Render("~/Content/css")
     <link href="~/Content/css/themes/red.css" rel="stylesheet" />
@@ -22,12 +23,22 @@
     <!-- Full Body Container -->
     <div id="container">
 
-        @Html.Action("Header", "Home");
+        @Html.Action("Header", "Home")
 
         @RenderBody()
 
-        @Html.Action("Footer", "Home");
+        @Html.Action("Footer", "Home")
 
+    </div>
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <div id="loader">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
     </div>
 
     <script src="~/Scripts/jquery-2.1.4.min.js"></script>

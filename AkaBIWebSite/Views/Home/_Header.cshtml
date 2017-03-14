@@ -10,29 +10,29 @@
                 <div class="col-md-7">
                     <ul class="contact-details">
                         <li>
-                            <a href="#">
+                            <a href="tel:+32476360653">
                                 <i class="fa fa-map-marker"></i> <strong>Belgium </strong>
                                 <i class="fa fa-phone phone-contact-top-bar"></i> +32 476 360 653
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="tel:+352661102432">
                                 <i class="fa fa-map-marker"></i> <strong>Luxembourg </strong>
                                 <i class="fa fa-phone phone-contact-top-bar"></i> +352 661 102 432
                             </a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-envelope-o"></i> info@akabi.eu</a>
+                            <a href="mailto:info@akabi.eu" target="_top"><i class="fa fa-envelope-o"></i> info@akabi.eu</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-5">
                     <ul class="social-list">
                         <li>
-                            <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" target="_blank" href="https://www.facebook.com/Akabi-191315314301345/?fref=ts"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                            <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" target="_blank" href="https://www.linkedin.com/company-beta/2488118/"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -67,30 +67,30 @@
                 <!-- Start Navigation List -->
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="active" href="index.html">Home</a>
+                        @Html.ActionLink("Home", "Index", "Home")
                     </li>
                     <li>
-                        <a href="about.html">Our Company</a>
+                        @Html.ActionLink("Our Company", "Index", "OurCompany")
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="javascript:;">Services</a>
                         <ul class="dropdown">
                             <li>
-                                <a href="tabs.html">Business Inteligence</a>
+                                @Html.ActionLink("Business Inteligence", "BiServices", "Services")
                             </li>
                             <li>
-                                <a href="buttons.html">Software Development</a>
+                                @Html.ActionLink("Software Development", "DevelopmentServices", "Services")
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="portfolio-3.html">Career</a>
+                        @Html.ActionLink("Career", "Index", "Career")
                     </li>
                     <li>
-                        <a href="blog.html">Offices</a>
+                        @Html.ActionLink("Offices", "Index", "Offices")
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        @Html.ActionLink("Contact Us", "Index", "ContactUs")
                     </li>
                 </ul>
                 <!-- End Navigation List -->
