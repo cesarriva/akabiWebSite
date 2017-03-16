@@ -1,0 +1,17 @@
+﻿.home-bg-video--content {
+    position: relative;
+    text-align: center;
+    color: #FFF !important;
+    margin: 180px 0;
+}
+
+.home-bg-video--content h1 {
+	font-size: 60px;
+	margin: 0 0 10px;
+    color: #FFF !important;
+}
+.home-bg-video--content p {
+	font-size: 20px;
+    margin-top: 20px;
+    color: #FFF !important;
+}

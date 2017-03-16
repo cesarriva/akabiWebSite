@@ -13,7 +13,7 @@ $(document).ready(function ($) {
 		var $headerHeight = $('header').height();
 		$('.hidden-header').css({ 'height' : $headerHeight  + "px" });
 	};
-	
+
 	$(window).load(function () {
 	    headerEle();
 	});
@@ -21,7 +21,6 @@ $(document).ready(function ($) {
 	$(window).resize(function () {
 	    headerEle();
 	});
-	
     
     /*---------------------------------------------------*/
     /* Progress Bar

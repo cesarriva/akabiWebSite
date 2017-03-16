@@ -17,6 +17,13 @@ namespace AkaBIWebSite
                       "~/Content/css/responsive.css",
                       "~/Content/css/animate.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/mainJsLibraries").Include(
+                    "~/Scripts/jquery-2.1.4.min.js",
+                    "~/Scripts/modernizr-2.6.2.js",
+                    "~/Scripts/bootstrap.min.js",
+                    "~/Scripts/jquery.background-video.js"
+                ));
+
             bundles.Add(new ScriptBundle("~/bundles/margoTemplate").Include(
                     "~/Scripts/jquery.fitvids.js",
                     "~/Scripts/owl.carousel.min.js",
@@ -29,7 +36,8 @@ namespace AkaBIWebSite
                     "~/Scripts/jquery.nicescroll.min.js",
                     "~/Scripts/jquery.parallax.js",
                     "~/Scripts/mediaelement-and-player.js",
-                    "~/Scripts/jquery.slicknav.js"
+                    "~/Scripts/jquery.slicknav.js",
+                    "~/Scripts/script.js"
                 ));
         }
     }

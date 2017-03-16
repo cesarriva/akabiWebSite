@@ -8,5 +8,11 @@
 }
 
 .header-logo {
-    width:100px; 
+    width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .slicknav_menu {
+        margin-bottom: 30px;
+    }
 }

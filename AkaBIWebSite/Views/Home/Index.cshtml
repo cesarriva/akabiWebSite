@@ -1,21 +1,20 @@
-﻿<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
-<h2>Content here</h2>
+﻿<div class="home-bg-video jquery-background-video-wrapper">
+    <video class="jquery-background-video" autoplay muted loop>
+        <source src="~/Content/videos/videoTest.mp4" type="video/mp4">
+        <source src="~/Content/videos/videoTest.webm" type="video/webm">
+        <source src="~/Content/videos/videoTest.ogv" type="video/ogg" />
+    </video>
+    <div class="video-overlay"></div>
+    <div class="page-width">
+        <div class="home-bg-video--content">
+            <h1>We deliver digital</h1>
+            <p><strong>Strategic IT Solutions</strong></p>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/Scripts/home-background-video-init.js"></script>
+}
+
