@@ -134,6 +134,7 @@
   <ItemGroup>
     <Content Include="Content\css\animate.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\common.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\footer-section.css" />
     <Content Include="Content\css\home-section.css" />
@@ -146,10 +147,12 @@
     <Content Include="Content\css\themes\sky-blue.css" />
     <Content Include="Content\images\akabi_logo_transparent.png" />
     <Content Include="Content\images\akabi_logo_transparent50.png" />
-    <Content Include="Content\images\bg1.jpg" />
-    <Content Include="Content\images\bg2.jpg" />
-    <Content Include="Content\images\bg3.jpg" />
+    <Content Include="Content\images\architecture-1048092_960_720.jpg" />
+    <Content Include="Content\images\code-1839406_960_720.jpg" />
+    <Content Include="Content\images\computer-767776_960_720.jpg" />
     <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\man-791049_960_720.jpg" />
+    <Content Include="Content\images\organic-1280537_960_720.jpg" />
     <Content Include="Content\images\small-map.png" />
     <Content Include="Content\images\small-logo.png" />
     <Content Include="Content\images\xs-logo.png" />
@@ -212,6 +215,11 @@
     <Content Include="Views\Career\Index.cshtml" />
     <Content Include="Views\Offices\Index.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
+    <Content Include="Views\Home\_HomeVideo.cshtml" />
+    <Content Include="Views\Home\_HomeWhoWeAre.cshtml" />
+    <Content Include="Views\Home\_HomeOurServices.cshtml" />
+    <Content Include="Views\Home\_HomeOurValues.cshtml" />
+    <Content Include="Views\Home\_HomeOurLocation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

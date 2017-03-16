@@ -5,13 +5,40 @@
     margin: 180px 0;
 }
 
-.home-bg-video--content h1 {
-	font-size: 60px;
-	margin: 0 0 10px;
-    color: #FFF !important;
+    .home-bg-video--content h1 {
+        font-size: 60px;
+        margin: 0 0 10px;
+        color: #FFF !important;
+    }
+
+    .home-bg-video--content p {
+        font-size: 20px;
+        margin-top: 20px;
+        color: #FFF !important;
+    }
+
+
+.big-title h1, .big-title h2 {
+    font-size: 48px;
 }
-.home-bg-video--content p {
-	font-size: 20px;
-    margin-top: 20px;
-    color: #FFF !important;
+
+.who-we-are-left-side {
+    padding: 60px 50px 10px 50px;
+    justify-content: center;
+    height: 400px;
+}
+
+.who-we-are-right-side {
+    height: 400px;
+    padding-left: 0;
+    padding-right: 16px;
+}
+
+.our-values {
+    margin-bottom: 60px;
+}
+
+.our-values-widget > h3 {
+    text-align: center;
+    margin-bottom: 6px;
 }
