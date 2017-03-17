@@ -1,4 +1,5 @@
-﻿.home-bg-video--content {
+﻿/*video home section*******************************/
+.home-bg-video--content {
     position: relative;
     text-align: center;
     color: #FFF !important;
@@ -17,15 +18,14 @@
         color: #FFF !important;
     }
 
-
-.big-title h1, .big-title h2 {
-    font-size: 48px;
+/*who we are section*******************************/
+#who-we-are-section {
+    background-color: #fbfbfb;
 }
 
 .who-we-are-left-side {
     padding: 60px 50px 10px 50px;
     justify-content: center;
-    height: 400px;
 }
 
 .who-we-are-right-side {
@@ -34,11 +34,117 @@
     padding-right: 16px;
 }
 
-.our-values {
-    margin-bottom: 60px;
+/*our values section*******************************/
+#our-values-section {
+    padding-bottom: 60px;
+    background-color: #fbfbfb;
 }
 
-.our-values-widget > h3 {
+.our-values-widget{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.our-values-widget > div{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 190px;
+}
+
+.our-values-widget > div > h3 {
     text-align: center;
-    margin-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+.our-values-widget > div > h3 > i {
+    margin-right: 10px;
+}
+
+.icon-quality{
+    color: #E5C100;
+}
+
+.icon-transparency{
+    color: deepskyblue;
+}
+
+.icon-fun{
+    color: orangered;
+}
+
+.our-location-individual-map-wrapper {
+    text-align: center;
+    padding: 10px;
+}
+
+    .our-location-individual-map-wrapper img {
+        margin: 0 auto;
+        height: 200px;
+        padding: 10px 0;
+    }
+
+    .our-location-individual-map-wrapper h2 {
+        color: white;
+        font-size: 26px;
+    }
+
+    .our-location-individual-map-wrapper p {
+        font-size: 17px;
+        line-height: 27px;
+        color: white;
+        font-weight: 400;
+    }
+
+/*home common *******************************/
+.big-title h1, .big-title h2 {
+    font-size: 48px;
+}
+
+/*media queries for home responssive layout *******************************/
+
+/*To control padding for the who we are text*/
+@media (min-width : 993px) and (max-width: 1086px) {
+    .who-we-are-left-side {
+        padding-top: 30px;
+    }
+}
+/*To control padding for the who we are text*/
+@media screen and (max-width: 992px) {
+    .who-we-are-left-side {
+        padding-top: 0;
+    }
+
+    .our-values-widget {
+        margin-bottom: 35px;
+    }
+}
+
+/*To control sections headers sizes*/
+@media (min-width : 480px) and (max-width: 992px) {
+    .home-bg-video--content h1 {
+        font-size: 40px;
+    }
+
+    .home-bg-video--content p {
+        font-size: 15px;
+    }
+
+    .big-title h1, .big-title h2 {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .home-bg-video--content h1 {
+        font-size: 30px;
+    }
+
+    .home-bg-video--content p {
+        font-size: 15px;
+    }
+
+    .big-title h1, .big-title h2 {
+        font-size: 30px;
+    }
 }

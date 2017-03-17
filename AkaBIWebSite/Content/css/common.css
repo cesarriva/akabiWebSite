@@ -8,7 +8,7 @@
 }
 
 .custom-large-button-wrapper {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -18,6 +18,6 @@
 }
 
 .section{
-    padding-top: 60px;
-    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
