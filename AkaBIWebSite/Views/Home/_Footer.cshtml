@@ -9,12 +9,13 @@
                     <h4 class="footer-header-logo">
                         <img src="~/Content/images/small-logo.png" class="img-responsive footer-img-logo" alt="Footer Logo" />
                     </h4>
-                    <p>Our offices are located in Luxembourg and Belgium. We also operate in Switzerland and France. Contact us!</p>
+                    <p>Our offices are located in Luxembourg and Belgium. Contact us!</p>
                     <ul>
                         <li><span>Luxembourg</span> +352 661 102 432</li>
                         <li><span>Belgium</span> +32 476 360 653</li>
                         <li><span>Email:</span> info@akabi.eu</li>
                     </ul>
+                    @Html.ActionLink("Contact us", "Index", "ContactUs", null, new { @class = "btn btn-system btn-small" })
                 </div>
             </div>
             <!-- .col-md-3 -->
@@ -24,8 +25,8 @@
             <div class="col-md-4 col-xs-12">
                 <div class="footer-widget widget-join-us">
                     <h4>Join us!<span class="head-line"></span></h4>
-                    <p>We are always looking for talended people to strengthen and expand our <strong>Business Inteligence</strong> and <strong>Development</strong> teams.</p>
-                    <a href="#" class="btn btn-system btn-small">Check Out the careers<i class="fa fa-hand-o-right"></i></a>
+                    <p>We are always looking for talented people to strengthen and expand our <strong>Business Intelligence</strong> and <strong>Development</strong> teams.</p>
+                    <a href="Career/Index" class="btn btn-system btn-small">Check Out the careers<i class="fa fa-hand-o-right"></i></a>
                 </div>
             </div>
             <!-- .col-md-3 -->
@@ -44,6 +45,9 @@
                             <a class="linkdin" target="_blank" href="https://www.linkedin.com/company-beta/2488118/"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
+                    
+                    <img class="img-responsive img-thumbnail pull-right" style="margin-bottom: 15px;" src="~/Content/images/tiny-logo-gptw.jpg" />
+
                 </div>
             </div>
             <!-- .col-md-3 -->

@@ -17,7 +17,19 @@
     font-size: 18px;
 }
 
-.section{
-    padding-top: 30px;
-    padding-bottom: 30px;
+ul.breadcrumbs li a {
+    color: white;
+}
+
+ul.breadcrumbs li {
+    color: white;
+}
+
+p {
+    color: black;
+    font-weight: 400;
+}
+
+.slicknav_nav{
+    margin-top: 92px;
 }

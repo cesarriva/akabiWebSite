@@ -1,0 +1,64 @@
+﻿.our-company-banner {
+    padding: 40px 0;
+    background: url('../images/office-581131(1).png') center #f9f9f9;
+}
+
+    .our-company-banner h2 {
+        color: white;
+    }
+
+    .our-company-banner p {
+        color: white;
+    }
+
+.our-company-row-wrapper {
+    background: #fbfbfb;
+}
+
+.our-company-row-img-wrapper {
+    background: white;
+    text-align: center;
+    padding-right: 0;
+}
+
+    .our-company-row-img-wrapper > img {
+        height: 350px;
+    }
+
+.mind-set-img {
+    width: 100%;
+}
+
+.our-company-row-text-wrapper {
+    padding: 30px 50px;
+}
+
+    .our-company-row-text-wrapper h1 {
+        color: #444444;
+        font-weight: 400;
+    }
+
+    .our-company-row-text-wrapper p {
+        color: #444444;
+        margin-bottom: 15px;
+    }
+
+/*.main-text-wrapper {
+    height: 270px;
+    max-height: 270px;
+    padding: 5px;
+}*/
+
+
+@media only screen and (max-width : 992px) {
+    .our-company-row-text-wrapper {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+
+.our-mission-wrapper {
+    background: url(../images/people-coffee-tea-meeting.jpg) no-repeat;
+    background-attachment: fixed;
+    padding: 170px 0;
+}

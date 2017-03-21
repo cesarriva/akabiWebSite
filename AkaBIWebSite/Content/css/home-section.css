@@ -34,43 +34,58 @@
     padding-right: 16px;
 }
 
-/*our values section*******************************/
-#our-values-section {
-    padding-bottom: 60px;
+#services-section {
     background-color: #fbfbfb;
 }
 
-.our-values-widget{
+/*our values section*******************************/
+#our-values-section {
+    padding-bottom: 60px;
+    background-color: #ffffff;
+}
+
+.our-values-widget {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.our-values-widget > div{
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    min-height: 190px;
-}
+    .our-values-widget > div {
+        background-color: #fbfbfb;
+        padding: 10px;
+        border-radius: 10px;
+        min-height: 160px;
+    }
 
-.our-values-widget > div > h3 {
-    text-align: center;
+        .our-values-widget > div > h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+            .our-values-widget > div > h3 > i {
+                margin-right: 10px;
+            }
+
+.wrapper-our-value {
     margin-bottom: 15px;
 }
 
-.our-values-widget > div > h3 > i {
-    margin-right: 10px;
+.wrapper-our-value-texts {
 }
 
-.icon-quality{
-    color: #E5C100;
+.wrapper-gptw-image {
+    text-align: left;
 }
 
-.icon-transparency{
-    color: deepskyblue;
+.icon-quality {
+    color: #CF0000;
 }
 
-.icon-fun{
-    color: orangered;
+.icon-transparency {
+    color: #CF0000;
+}
+
+.icon-fun {
+    color: #CF0000;
 }
 
 .our-location-individual-map-wrapper {
@@ -133,6 +148,25 @@
     .big-title h1, .big-title h2 {
         font-size: 34px;
     }
+
+    .primary-paragraph {
+        text-align: justify !important;
+    }
+
+    .wrapper-gptw-image {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .our-values-widget {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .who-we-are-left-side {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -146,5 +180,24 @@
 
     .big-title h1, .big-title h2 {
         font-size: 30px;
+    }
+
+    .primary-paragraph {
+        text-align: justify !important;
+    }
+
+    .wrapper-gptw-image {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .our-values-widget {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .who-we-are-left-side {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 }

@@ -7,6 +7,7 @@ namespace AkaBIWebSite.Controllers
         // GET: OurCompany
         public ActionResult Index()
         {
+            ViewBag.Title = "AkaBI S.a.rl | Our Company";
             return View();
         }
     }

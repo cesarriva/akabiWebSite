@@ -15,13 +15,15 @@ namespace AkaBIWebSite
                       "~/Content/css/slicknav.css",
                       "~/Content/css/style.css",
                       "~/Content/css/responsive.css",
-                      "~/Content/css/animate.css"));
+                      "~/Content/css/animate.css",
+                      "~/Content/css/themes/red.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/mainJsLibraries").Include(
                     "~/Scripts/jquery-2.1.4.min.js",
                     "~/Scripts/modernizr-2.6.2.js",
                     "~/Scripts/bootstrap.min.js",
-                    "~/Scripts/jquery.background-video.js"
+                    "~/Scripts/jquery.background-video.js",
+                    "~/Scripts/jquery.slimscroll.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/margoTemplate").Include(

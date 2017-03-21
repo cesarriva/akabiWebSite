@@ -4,27 +4,21 @@
 <head>
     <title>@ViewBag.Title</title>
 
-    <!-- Define Charset -->
     <meta charset="utf-8">
 
-    <!-- Responsive Metatag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="~/Content/images/favicon.ico" type="image/x-icon">
 
     @Styles.Render("~/Content/css")
-    <link href="~/Content/css/themes/red.css" rel="stylesheet" />
+    @RenderSection("pageCss", required: false)
+
     <link href="~/Content/css/header-section.css" rel="stylesheet" />
-    <link href="~/Content/css/home-section.css" rel="stylesheet" />
     <link href="~/Content/css/footer-section.css" rel="stylesheet" />
-
-    <link href="~/Content/css/jquery.background-video.css" rel="stylesheet" />
     <link href="~/Content/css/common.css" rel="stylesheet" />
-
 </head>
 
 <body>
 
-    <!-- Full Body Container -->
     <div id="container">
 
         @Html.Action("Header", "Home")
@@ -35,7 +29,6 @@
 
     </div>
 
-    <!-- Go To Top Link -->
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
     <div id="loader">

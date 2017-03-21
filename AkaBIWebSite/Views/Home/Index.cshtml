@@ -1,10 +1,15 @@
-﻿@Html.Partial("_HomeVideo")
+﻿@section pageCss{
+    <link href="~/Content/css/home-section.css" rel="stylesheet" />
+    <link href="~/Content/css/jquery.background-video.css" rel="stylesheet" />
+}
+
+@Html.Partial("_HomeVideo")
 
 @Html.Partial("_HomeWhoWeAre")
 
-@Html.Partial("_HomeOurServices")
-
 @Html.Partial("_HomeOurValues")
+
+@Html.Partial("_HomeOurServices")
 
 @Html.Partial("_HomeOurLocation")
 

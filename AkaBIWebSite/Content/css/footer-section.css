@@ -4,16 +4,16 @@
 
 .footer-container {
     background-color: #f6f6f6;
-    color: #555;
+    color: black;
 }
 
     .footer-container p {
-        color: #555;
+        color: black;
         font-weight: 400;
     }
 
 .footer-widget h4 {
-    color: #555;
+    color: black;
     margin-bottom: 36px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .social-widget ul.social-icons li a i {
-    color: #555;
+    color: black;
 }
 
     .social-widget ul.social-icons li a i:hover {
