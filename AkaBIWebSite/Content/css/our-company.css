@@ -11,44 +11,55 @@
         color: white;
     }
 
-.our-company-row-wrapper {
-    background: #fbfbfb;
+.our-story-section, .our-consultants-section {
+    background-color: #fbfbfb;
 }
 
-.our-company-row-img-wrapper {
-    background: white;
-    text-align: center;
-    padding-right: 0;
-    height: 400px;
-}
-
-    .our-company-row-img-wrapper > img {
-        height: 100%;
-        width: 100%;
-    }
-
-.our-story-img {
-    max-width: 600px !important;
-}
-
-.our-company-row-text-wrapper {
+.our-story-section, .our-mindset-section {
     padding-top: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-bottom: 30px;
 }
 
-    .our-company-row-text-wrapper h1 {
-        color: #444444;
-        font-weight: 400;
-    }
+.our-company-img-section > img {
+    max-height: 290px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .our-company-row-text-wrapper p {
-        color: #444444;
-        margin-bottom: 15px;
-    }
+@media (max-width: 768px) {
 
-.our-mission-wrapper {
+    .our-company-img-section > img {
+        margin-top: 27px;
+    }
+}
+
+.akabi-excellence-wrapper {
     background: url(../images/people-coffee-tea-meeting.jpg) no-repeat;
     background-attachment: fixed;
     padding: 170px 0;
+}
+
+.header-botton-page-section {
+    margin-left: -135px;
+}
+
+    .header-botton-page-section > .header-number {
+        font-size: 100px;
+    }
+
+    .header-botton-page-section > .header-second-part {
+        margin-left: 238px;
+    }
+
+
+@media (max-width: 480px) {
+
+    .my-font {
+        font-size: 30px;
+    }
+}
+
+.mind-set-items{
+    margin-top: 10px;
+    margin-left: 15px;
 }
