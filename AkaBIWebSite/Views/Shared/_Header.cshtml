@@ -1,0 +1,130 @@
+﻿<div class="hidden-header"></div>
+
+<header class="clearfix">
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <ul class="contact-details">
+                        <li>
+                            <a href="tel:+32476360653">
+                                <i class="fa fa-map-marker"></i> <strong>Belgium </strong>
+                                <i class="fa fa-phone phone-contact-top-bar"></i> +32 476 360 653
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+352661102432">
+                                <i class="fa fa-map-marker"></i> <strong>Luxembourg </strong>
+                                <i class="fa fa-phone phone-contact-top-bar"></i> +352 661 102 432
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@akabi.eu" target="_top"><i class="fa fa-envelope-o"></i> info@akabi.eu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <ul class="social-list">
+                        <li>
+                            <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" target="_blank" href="https://www.facebook.com/Akabi-191315314301345/?fref=ts"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" target="_blank" href="https://www.linkedin.com/company-beta/2488118/"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-default navbar-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                    <img alt="" class="header-logo" src="~/Content/images/small-logo.png">
+                </a>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+
+                <div class="search-side">
+                    <a class="show-search"><i class="fa fa-search"></i></a>
+                    <div class="search-form">
+                        <form autocomplete="off" role="search" method="get" class="searchform" action="#">
+                            <input type="text" value="" name="s" id="s" placeholder="Search the site...">
+                        </form>
+                    </div>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        @Html.ActionLink("Home", "Index", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Our Company", "Index", "OurCompany")
+                    </li>
+                    <li>
+                        <a href="javascript:;">Services</a>
+                        <ul class="dropdown">
+                            <li>
+                                @Html.ActionLink("Business Intelligence", "BiServices", "Services")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Business Innovation", "DevelopmentServices", "Services")
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        @Html.ActionLink("Career", "Index", "Career")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Offices", "Index", "Offices")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact Us", "Index", "ContactUs")
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <ul class="wpb-mobile-menu">
+            <li>
+                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "active"})
+            </li>
+            <li>
+                @Html.ActionLink("Our Company", "Index", "OurCompany")
+            </li>
+            <li>
+                <a href="javascript:;">Services</a>
+                <ul class="dropdown">
+                    <li>
+                        @Html.ActionLink("Business Intelligence", "BiServices", "Services")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Business Innovation", "DevelopmentServices", "Services")
+                    </li>
+                </ul>
+            </li>
+            <li>
+                @Html.ActionLink("Career", "Index", "Career")
+            </li>
+            <li>
+                @Html.ActionLink("Offices", "Index", "Offices")
+            </li>
+            <li>
+                @Html.ActionLink("Contact Us", "Index", "ContactUs")
+            </li>
+        </ul>
+
+    </div>
+
+</header>
+

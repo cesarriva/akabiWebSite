@@ -1,0 +1,42 @@
+﻿.bi-services-banner {
+    background: url('../images/pexels-photo-40120.jpeg') center #f9f9f9;
+}
+
+.other-bi-services {
+    background-color: #444444;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+}
+
+    .other-bi-services > .text-side {
+        min-height: 1px;
+        padding: 15px;
+    }
+
+        .other-bi-services > .text-side > p {
+            color: white;
+        }
+
+    .other-bi-services > .img-side {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .other-bi-services .icon-description {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+        .other-bi-services .icon-description h4 {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .other-bi-services .icon-description p {
+            color: #fff;
+        }
+
+        .icon-wrapper > i{
+            color: white;
+        }

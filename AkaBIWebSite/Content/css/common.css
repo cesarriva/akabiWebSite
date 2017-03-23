@@ -1,4 +1,35 @@
-﻿.header-custom-font{
+﻿.page-banner {
+    padding: 100px 0;
+}
+
+    .page-banner h2, .page-banner p {
+        color: white;
+        font-weight: 600;
+    }
+
+.page-banner-main-title {
+    color: white;
+    font-size: 42px;
+    /*font-family: 'Soria';*/
+    line-height: 45px;
+}
+
+@media (max-width: 992px) {
+
+    .page-banner-main-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .primary-paragraph {
+        text-align: justify !important;
+    }
+}
+
+.header-custom-font {
     font-family: 'Soria' !important;
     font-size: 46px;
 }
@@ -8,8 +39,8 @@
     line-height: 27px;
 }
 
-.text-justify{
-    text-align:justify;
+.text-justify {
+    text-align: justify;
 }
 
 .custom-large-button-wrapper {
@@ -35,11 +66,15 @@ p {
     font-weight: 400;
 }
 
-.slicknav_nav{
+.slicknav_nav {
     margin-top: 92px;
 }
 
-ul li{
+ul li {
     color: black;
     font-weight: 400;
+}
+
+.our-clients-section{
+    padding-bottom: 60px;
 }

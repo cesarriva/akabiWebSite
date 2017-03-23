@@ -133,8 +133,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\bi-services.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\common.css" />
+    <Content Include="Content\css\dev-services.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\footer-section.css" />
     <Content Include="Content\css\home-section.css" />
@@ -146,13 +148,15 @@
     <Content Include="Content\css\our-company.css" />
     <Content Include="Content\css\themes\red.css" />
     <Content Include="Content\css\themes\sky-blue.css" />
-    <Content Include="Content\images\AKABI_Logo_5years1VDef-page-001.jpg" />
+    <Content Include="Content\images\AKABI_Logo_5years1VDef-page-001.fw.png" />
+    <Content Include="Content\images\AKABI_Logo_5yearsTransp.fw.png" />
     <Content Include="Content\images\akabi_logo_transparent.png" />
     <Content Include="Content\images\alterDomusLogo.jpg" />
     <Content Include="Content\images\baloise.logo.PNG" />
     <Content Include="Content\images\bcee_logo.jpg" />
     <Content Include="Content\images\belgium-white.png" />
     <Content Include="Content\images\BGL_BL_Q1.jpg" />
+    <Content Include="Content\images\black-and-white-city-man-people.jpg" />
     <Content Include="Content\images\computer-767776.jpg" />
     <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\INGMainLogo.jpg" />
@@ -163,9 +167,11 @@
     <Content Include="Content\images\pexels-photo-195935.jpeg" />
     <Content Include="Content\images\pexels-photo-348323.jpeg" />
     <Content Include="Content\images\pwc_logo.png" />
+    <Content Include="Content\images\signing-in-at-a-conference.jpg" />
     <Content Include="Content\images\small-logo-gptw.jpg" />
     <Content Include="Content\images\small-map.png" />
     <Content Include="Content\images\small-logo.png" />
+    <Content Include="Content\images\tiny-logo-gptw.jpg" />
     <Content Include="Content\images\videoTest_013.jpg" />
     <Content Include="Content\videos\videoTest.mp4" />
     <Content Include="favicon.ico" />
@@ -173,11 +179,11 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\videos\videoTest.webm" />
+    <Content Include="Content\videos\videoTest.ogv" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="Content\videos\videoTest.webm" />
-    <Content Include="Content\videos\videoTest.ogv" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\count-to.js" />
     <Content Include="Scripts\home-background-video-init.js" />
@@ -220,19 +226,20 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_Header.cshtml" />
-    <Content Include="Views\Home\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\OurCompany\Index.cshtml" />
     <Content Include="Views\Services\BiServices.cshtml" />
     <Content Include="Views\Services\DevelopmentServices.cshtml" />
     <Content Include="Views\Career\Index.cshtml" />
     <Content Include="Views\Offices\Index.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
-    <Content Include="Views\Home\_HomeVideo.cshtml" />
-    <Content Include="Views\Home\_HomeWhoWeAre.cshtml" />
-    <Content Include="Views\Home\_HomeOurServices.cshtml" />
-    <Content Include="Views\Home\_HomeOurValues.cshtml" />
-    <Content Include="Views\Home\_HomeOurLocation.cshtml" />
+    <Content Include="Views\Home\_VideoSection.cshtml" />
+    <Content Include="Views\Home\_WhoWeAreSection.cshtml" />
+    <Content Include="Views\Home\_OurServicesSection.cshtml" />
+    <Content Include="Views\Home\_OurValuesSection.cshtml" />
+    <Content Include="Views\Home\_LocationSection.cshtml" />
+    <Content Include="Views\Shared\_OurClients.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

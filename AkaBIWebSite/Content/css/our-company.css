@@ -1,30 +1,25 @@
 ﻿.our-company-banner {
-    padding: 40px 0;
     background: url('../images/office-581131(1).png') center #f9f9f9;
 }
-
-    .our-company-banner h2 {
-        color: white;
-    }
-
-    .our-company-banner p {
-        color: white;
-    }
 
 .our-story-section, .our-consultants-section {
     background-color: #fbfbfb;
 }
 
-.our-story-section, .our-mindset-section {
+.our-story-section, .our-mindset-section, .our-consultants-section {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.our-company-img-section > img {
-    max-height: 290px;
-    margin-left: auto;
-    margin-right: auto;
+.our-company-img-section {
+    padding-left: 10px;
 }
+
+    .our-company-img-section > img {
+        max-height: 290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 @media (max-width: 768px) {
 
@@ -54,12 +49,42 @@
 
 @media (max-width: 480px) {
 
-    .my-font {
-        font-size: 30px;
+    .header-botton-page-section {
+        font-size: 30px !important;
     }
 }
 
-.mind-set-items{
+.mind-set-items {
     margin-top: 10px;
     margin-left: 15px;
+}
+
+.key-facts-container{
+    padding-top: 30px;
+}
+
+.key-fact-wrapper {
+    height: 100px;
+    margin-bottom: 35px
+}
+
+.key-fact-title, .key-fact-label {
+    color: white;
+    display: block;
+    height: 60px
+}
+
+.key-fact-title {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.key-fact-label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.key-icon{
+    margin-top: -10px;
+    margin-bottom: 10px
 }
