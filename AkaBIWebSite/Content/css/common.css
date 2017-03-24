@@ -1,4 +1,8 @@
-﻿.page-banner {
+﻿.navbar-default .navbar-nav > li > a {
+    padding: 38px 15px 38px 15px;
+}
+
+.page-banner {
     padding: 100px 0;
 }
 
