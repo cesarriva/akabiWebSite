@@ -1,13 +1,19 @@
 ﻿/*video home section*******************************/
-#home-video{
-    position:relative;
+#home-video {
+    position: relative;
 }
 
-.gptw-small-logo-on-video{
+.gptw-small-logo-on-video {
     position: absolute;
     z-index: 9999;
-    top: 4%;
-    right: 1%;
+    top: 5%;
+    left: 1%;
+}
+
+@media screen and (min-width: 1101px) {
+    .gptw-small-logo-on-video {
+        display: none !important;
+    }
 }
 
 .home-bg-video--content {
@@ -81,7 +87,6 @@
 }
 
 .wrapper-our-value-texts {
-
 }
 
 .wrapper-gptw-image {
@@ -128,15 +133,12 @@
     font-size: 48px;
 }
 
-/*media queries for home responssive layout *******************************/
-
-/*To control padding for the who we are text*/
 @media (min-width : 993px) and (max-width: 1086px) {
     .who-we-are-left-side {
         padding-top: 30px;
     }
 }
-/*To control padding for the who we are text*/
+
 @media screen and (max-width: 992px) {
     .who-we-are-left-side {
         padding-top: 0;
@@ -147,7 +149,6 @@
     }
 }
 
-/*To control sections headers sizes*/
 @media (min-width : 480px) and (max-width: 992px) {
     .home-bg-video--content h1 {
         font-size: 40px;
@@ -190,7 +191,7 @@
         font-size: 30px;
     }
 
-    
+
 
     .wrapper-gptw-image {
         text-align: center;
