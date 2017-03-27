@@ -123,7 +123,6 @@
     <Compile Include="Controllers\CareerController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\OfficesController.cs" />
     <Compile Include="Controllers\OurCompanyController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -133,10 +132,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\contact-page.css" />
     <Content Include="Content\css\services.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\common.css" />
-    <Content Include="Content\css\dev-services.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\footer-section.css" />
     <Content Include="Content\css\home-section.css" />
@@ -148,6 +147,7 @@
     <Content Include="Content\css\our-company.css" />
     <Content Include="Content\css\themes\red.css" />
     <Content Include="Content\css\themes\sky-blue.css" />
+    <Content Include="Scripts\google-maps-contact-page.js" />
     <Content Include="Content\images\AKABI_Logo_5years1VDef-page-001.fw.png" />
     <Content Include="Content\images\AKABI_Logo_5yearsTransp.fw.png" />
     <Content Include="Content\images\akabi_logo_transparent.png" />
@@ -236,7 +236,6 @@
     <Content Include="Views\Services\BiServices.cshtml" />
     <Content Include="Views\Services\DevelopmentServices.cshtml" />
     <Content Include="Views\Career\Index.cshtml" />
-    <Content Include="Views\Offices\Index.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
     <Content Include="Views\Home\_VideoSection.cshtml" />
     <Content Include="Views\Home\_WhoWeAreSection.cshtml" />

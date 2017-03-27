@@ -1,16 +1,133 @@
-﻿<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
-<h2>Form contact here</h2>
+﻿@section pageCss{
+    <link href="~/Content/css/contact-page.css" rel="stylesheet" />
+}
+
+<div id="contact-content">
+    <div class="container">
+        <div class="row">
+
+            @*<div class="col-md-10 col-md-offset-1">*@
+            <div class="col-md-8">
+
+                <h4 class="classic-title"><span>Contact Us</span></h4>
+
+                <form role="form" class="contact-form" id="contact-form" method="post">
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="text" placeholder="Name" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="email" class="email" placeholder="Email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input type="text" class="requiredField" placeholder="Subject" name="subject">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="controls">
+                            <textarea rows="7" placeholder="Message" name="message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-system btn-large">Send</button>
+                    <div id="success" style="color:#34495e;"></div>
+                </form>
+
+            </div>
+
+            <div class="col-md-4">
+
+                    <h4 class="classic-title"><span>Our Offices</span></h4>
+
+                    <p>
+                        Come and meet us or make us a call.
+                    </p>
+
+                    <div class="hr1" style="margin-bottom:10px;"></div>
+
+                    <h5 class="office-location-title">Luxembourg</h5>
+                    <ul class="icons-list">
+                        <li><i class="fa fa-globe">  </i> <strong>Address:</strong> Rue Roger Wercollier, 15 - Hesperange</li>
+                        <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> contact@akabi.eu</li>
+                        <li><i class="fa fa-mobile"></i> <strong>Phone:</strong> +352 661 102 432</li>
+                    </ul>
+
+                    <div class="hr1" style="margin-bottom:10px;"></div>
+
+                    <h5 class="office-location-title">Belgium</h5>
+                    <ul class="icons-list">
+                        <li><i class="fa fa-globe">  </i> <strong>Address:</strong> Boulevard de la Cambre, 74 - Bruxelles</li>
+                        <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> contact@akabi.eu</li>
+                        <li><i class="fa fa-mobile"></i> <strong>Phone:</strong> +32 476 360 653</li>
+                    </ul>
+
+                    <div class="hr1" style="margin-bottom:15px;"></div>
+
+                    <h4 class="classic-title"><span>Working Hours</span></h4>
+
+                    <ul class="list-unstyled">
+                        <li><strong>Monday - Friday</strong> - 9am to 6pm</li>
+                        <li><strong>Saturday & Sunday</strong> - Closed</li>
+                    </ul>
+
+                </div>
+
+        </div>
+    </div>
+</div>
+
+@*<div class="section" id="office-maps">
+    <div class="container">
+        <div class="row">
+
+            <h4 class="classic-title offices-section-title"><span>Our Offices</span></h4>
+
+            <div class="col-md-5">
+
+                <div class="hr1" style="margin-bottom:10px;"></div>
+
+                <h5 class="office-location-title">Luxembourg</h5>
+                <ul class="icons-list">
+                    <li><i class="fa fa-globe">  </i> <strong>Address:</strong> Rue Roger Wercollier, 15 - Hesperange</li>
+                    <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> contact@akabi.eu</li>
+                    <li><i class="fa fa-mobile"></i> <strong>Phone:</strong> +352 661 102 432</li>
+                </ul>
+
+                <div class="hr1" style="margin-bottom:15px;"></div>
+
+                <div id="luxembourg-map" class="office-google-map">
+                </div>
+
+            </div>
+
+            <div class="col-md-5 col-md-offset-2">
+
+                <div class="hr1" style="margin-bottom:10px;"></div>
+
+                <h5 class="office-location-title">Belgium</h5>
+                <ul class="icons-list">
+                    <li><i class="fa fa-globe">  </i> <strong>Address:</strong> Boulevard de la Cambre, 74 - Bruxelles</li>
+                    <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> contact@akabi.eu</li>
+                    <li><i class="fa fa-mobile"></i> <strong>Phone:</strong> +32 476 360 653</li>
+                </ul>
+
+                <div class="hr1" style="margin-bottom:15px;"></div>
+
+                <div id="belgium-map" class="office-google-map">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>*@
+
+@section scripts{
+    @*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaR88NGQFG4NH8LRgR_rvHhdRsMvcuL8c" type="text/javascript"></script>*@
+    @*<script src="~/Scripts/google-maps-contact-page.js"></script>*@
+}

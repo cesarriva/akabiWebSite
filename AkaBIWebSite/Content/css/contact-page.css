@@ -1,0 +1,29 @@
+﻿#contact-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#office-maps {
+    background-color: #fbfbfb;
+}
+
+.offices-section-title {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.office-location-title {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+
+    #luxembourg-map {
+        margin-bottom: 30px;
+    }
+}
+
+.office-google-map {
+    padding: 0;
+    height: 300px;
+}

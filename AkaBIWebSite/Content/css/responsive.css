@@ -454,3 +454,9 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 479px) {
+    .classic-title {
+        margin-top: 20px;
+    }
+}
