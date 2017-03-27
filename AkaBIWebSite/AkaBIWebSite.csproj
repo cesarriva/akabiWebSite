@@ -133,7 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\animate.css" />
-    <Content Include="Content\css\bi-services.css" />
+    <Content Include="Content\css\services.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\common.css" />
     <Content Include="Content\css\dev-services.css" />
@@ -157,15 +157,19 @@
     <Content Include="Content\images\belgium-white.png" />
     <Content Include="Content\images\BGL_BL_Q1.jpg" />
     <Content Include="Content\images\black-and-white-city-man-people.jpg" />
-    <Content Include="Content\images\computer-767776.jpg" />
+    <Content Include="Content\images\dev-technologies.fw.png" />
     <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\INGMainLogo.jpg" />
     <Content Include="Content\images\luxembourg-white.png" />
     <Content Include="Content\images\man-791049_960_720.jpg" />
     <Content Include="Content\images\office-581131%281%29.png" />
     <Content Include="Content\images\people-coffee-tea-meeting.jpg" />
+    <Content Include="Content\images\pexels-photo-106344.jpeg" />
     <Content Include="Content\images\pexels-photo-195935.jpeg" />
     <Content Include="Content\images\pexels-photo-348323.jpeg" />
+    <Content Include="Content\images\pexels-photo-40120.jpeg" />
+    <Content Include="Content\images\pexels-photo-75083.jpeg" />
+    <Content Include="Content\images\pexels-photo.jpg" />
     <Content Include="Content\images\pwc_logo.png" />
     <Content Include="Content\images\signing-in-at-a-conference.jpg" />
     <Content Include="Content\images\small-logo-gptw.jpg" />

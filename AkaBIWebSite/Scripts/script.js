@@ -469,7 +469,9 @@ $(document).ready(function ($) {
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 0 + "px", 'padding-bottom' : 0 + "px" })
 				}else{
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 45 + "px", 'padding-bottom' : 45 + "px" })
-					$('.search-side').css({ 'margin-top' : -7 + "px" });
+					$('.search-side').css({ 'margin-top': -7 + "px" });
+
+					$('.gptw-small-logo-on-header').css({ 'top' : 10 + "%"});
 				};
 				
 			}
@@ -482,7 +484,9 @@ $(document).ready(function ($) {
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 0 + "px", 'padding-bottom' : 0 + "px" })
 				}else{
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 38 + "px", 'padding-bottom' : 38 + "px" })
-					$('.search-side').css({ 'margin-top' : 0  + "px" });
+					$('.search-side').css({ 'margin-top': 0 + "px" });
+
+					$('.gptw-small-logo-on-header').css({ 'top': 4 + "%" });
 				};
 				
 			}

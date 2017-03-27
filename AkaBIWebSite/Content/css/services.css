@@ -1,0 +1,59 @@
+﻿.bi-services-banner {
+    background: url('../images/pexels-photo-40120.jpeg') center #f9f9f9;
+}
+
+.dev-services-banner {
+    background: url('../images/pexels-photo.jpg') top #f9f9f9;
+}
+
+.other-services {
+    background-color: #444444;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+}
+
+    .other-services > .text-side {
+        min-height: 1px;
+        padding: 15px;
+    }
+
+        .other-services > .text-side > h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .other-services > .text-side > p {
+            color: white;
+        }
+
+    .other-services .icon-description {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+        .other-services .icon-description h4 {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .other-services .icon-description p {
+            color: #fff;
+        }
+
+    .other-services > .img-side {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+.icon-wrapper > i {
+    color: white;
+}
+
+@media (max-width: 992px) {
+
+    .tech-images-wrapper {
+        margin-top: 30px;
+    }
+}
+
