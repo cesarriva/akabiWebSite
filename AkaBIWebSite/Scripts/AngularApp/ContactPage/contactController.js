@@ -28,7 +28,8 @@ angular.module("mainAppModule").controller('ContactController',
                         function (result) {
 
                             if (result.success) {
-                                $scope.showErrorToastr(result.message);
+                                cleanForm();
+                                $scope.showSuccessToastr(result.message);
                             }
                         },
                         function (errorResult) {
@@ -39,6 +40,11 @@ angular.module("mainAppModule").controller('ContactController',
                         $scope.sendingContactMessage = false;
                     });
             };
+
+            function cleanForm() {
+                $scope.contactForm.$setUntouched();
+                $scope.contactData = {};
+            }
 
         }
     ]);

@@ -6,19 +6,8 @@ angular.module("mainAppModule").controller('MainAppController',
         function ($scope) {
 
             $scope.showSuccessToastr = function (message, title) {
-                toastr.success(message, title);
-            }
-
-            $scope.showInfoToastr = function (message, title) {
-                toastr.info(message, title);
-            }
-
-            $scope.showErrorToastr = function (message, title) {
+                /*Show red message as success message*/
                 toastr.error(message, title);
-            }
-
-            $scope.showWarningToastr = function (message, title) {
-                toastr.warning(message, title);
             }
 
         }
