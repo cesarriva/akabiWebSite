@@ -16,14 +16,21 @@ namespace AkaBIWebSite
                       "~/Content/css/style.css",
                       "~/Content/css/responsive.css",
                       "~/Content/css/animate.css",
-                      "~/Content/css/themes/red.css"));
+                      "~/Content/css/themes/red.css",
+                      "~/Content/css/ladda-themeless.min.css",
+                      "~/Content/css/toastr.min.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/mainJsLibraries").Include(
                     "~/Scripts/jquery-2.1.4.min.js",
+                    "~/Scripts/angular.min.js",
                     "~/Scripts/modernizr-2.6.2.js",
                     "~/Scripts/bootstrap.min.js",
                     "~/Scripts/jquery.background-video.js",
-                    "~/Scripts/jquery.slimscroll.min.js"
+                    "~/Scripts/jquery.slimscroll.min.js",
+                    "~/Scripts/spin.min.js",
+                    "~/Scripts/ladda.min.js",
+                    "~/Scripts/angular-ladda.min.js",
+                    "~/Scripts/toastr.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/margoTemplate").Include(

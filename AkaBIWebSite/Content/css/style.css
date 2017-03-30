@@ -1102,10 +1102,10 @@ input[type="submit"] {
 #contact-form textarea,
 #respond input[type="text"],
 #respond textarea, .email {
-    color: #666fb5;
+    color: black;
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
-    border: 1px solid #eee;
+    /*border: 1px solid #eee;*/
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1123,6 +1123,7 @@ input[type="submit"] {
 
 .widget-search input[type="search"]:focus,
 #contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
 #contact-form textarea:focus,
 #respond input[type="text"]:focus,
 #respond textarea:focus {

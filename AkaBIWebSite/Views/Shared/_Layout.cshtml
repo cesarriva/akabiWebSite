@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mainAppModule">
 
 <head>
     <title>@ViewBag.Title</title>
@@ -11,13 +11,12 @@
 
     @Styles.Render("~/Content/css")
     @RenderSection("pageCss", required: false)
-
     <link href="~/Content/css/header-section.css" rel="stylesheet" />
     <link href="~/Content/css/footer-section.css" rel="stylesheet" />
     <link href="~/Content/css/common.css" rel="stylesheet" />
 </head>
 
-<body>
+<body ng-controller="MainAppController">
 
     <div id="container">
 
@@ -40,11 +39,19 @@
 
     @Scripts.Render("~/bundles/mainJsLibraries")
     @Scripts.Render("~/bundles/margoTemplate")
-    
+
     <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
+    <script src="~/Scripts/AngularApp/mainModuleApp.js"></script>
+    <script src="~/Scripts/AngularApp/mainAppController.js"></script>
+
+    <script src="~/Scripts/AngularApp/ContactPage/contactService.js"></script>
+    <script src="~/Scripts/AngularApp/ContactPage/contactController.js"></script>
+    <script src="~/Scripts/AngularApp/ContactPage/validateFieldOnSubmit.js"></script>
+
     @RenderSection("scripts", required: false)
+
 
 </body>
 

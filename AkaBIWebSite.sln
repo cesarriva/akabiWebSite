@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkaBIWebSite", "AkaBIWebSite\AkaBIWebSite.csproj", "{88085E02-4F14-4B59-B3E4-4C89B0C4D907}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkaBIWebSite.Services", "AkaBIWebSite.Services\AkaBIWebSite.Services.csproj", "{C913D41C-D964-4865-9177-60B721412C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkaBIWebSite.Contracts", "AkaBIWebSite.Contracts\AkaBIWebSite.Contracts.csproj", "{5ABBAF64-AB73-4843-ADB9-9398C94F8D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkaBIWebSite.Infrastructure", "AkaBIWebSite.Infrastructure\AkaBIWebSite.Infrastructure.csproj", "{A741E443-372B-44BF-ADF5-122CAE414D75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{88085E02-4F14-4B59-B3E4-4C89B0C4D907}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88085E02-4F14-4B59-B3E4-4C89B0C4D907}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88085E02-4F14-4B59-B3E4-4C89B0C4D907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C913D41C-D964-4865-9177-60B721412C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C913D41C-D964-4865-9177-60B721412C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C913D41C-D964-4865-9177-60B721412C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C913D41C-D964-4865-9177-60B721412C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ABBAF64-AB73-4843-ADB9-9398C94F8D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABBAF64-AB73-4843-ADB9-9398C94F8D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABBAF64-AB73-4843-ADB9-9398C94F8D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABBAF64-AB73-4843-ADB9-9398C94F8D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A741E443-372B-44BF-ADF5-122CAE414D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A741E443-372B-44BF-ADF5-122CAE414D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A741E443-372B-44BF-ADF5-122CAE414D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A741E443-372B-44BF-ADF5-122CAE414D75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

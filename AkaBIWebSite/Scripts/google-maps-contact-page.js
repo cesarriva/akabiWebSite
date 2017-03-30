@@ -1,129 +1,72 @@
-﻿var markers = [];
-
-var mapStyle = [
-    {
-        "featureType": "landscape.natural",
-        "elementType": "geometry.fill",
-        "stylers": [{
-            "color": "#ffffff"
-        }]
-    },
-    {
-        "featureType": "landscape.man_made",
-        "stylers": [{
-            "color": "#ffffff"
-        }
-            , {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "stylers": [{
-            "color": "#80C8E5"
-        }
-                    , {
-                        "saturation": 0
-                    }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#999999"
-        }
-        ]
-    },
-    {
-        "elementType": "labels.text.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    },
-    {
-        "elementType": "labels.text",
-        "stylers": [{
-            "color": "#333333"
-        }]
-    },
-    {
-        "featureType": "road.local",
-        "stylers": [{
-            "color": "#dedede"
-        }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "labels.text",
-        "stylers": [{
-            "color": "#666666"
-        }]
-    },
-    {
-        "featureType": "transit.station.bus",
-        "stylers": [{
-            "saturation": -57
-        }]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "labels.icon",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    },
-    {
-        "featureType": "poi",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }];
-
-var mapMarkerImage = new google.maps.MarkerImage(
-  '../Content/images/map-marker-icon.png',
-  new google.maps.Size(84, 70),
-  new google.maps.Point(0, 0),
-  new google.maps.Point(60, 60)
-);
-
-function addMarker(map, plain) {
-    markers.push(new google.maps.Marker({
-        position: plain,
-        raiseOnDrag: false,
-        icon: mapMarkerImage,
-        map: map,
-        draggable: false
-    }));
-}
-
-function createMapOption(coordinates) {
-    var mapOptions = {
-        backgroundColor: "#ffffff",
-        zoom: 15,
-        disableDefaultUI: true,
-        center: coordinates,
-        zoomControl: false,
-        scaleControl: false,
-        scrollwheel: false,
-        disableDoubleClickZoom: true,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: mapStyle
-    };
-
-    return mapOptions;
-}
+﻿jQuery(function ($) {
+    // Asynchronously Load the map API 
+    var script = document.createElement('script');
+    script.src = "//maps.googleapis.com/maps/api/js?key=AIzaSyAaR88NGQFG4NH8LRgR_rvHhdRsMvcuL8c&callback=initialize";
+    document.body.appendChild(script);
+});
 
 function initialize() {
-    var luxCoordinates = new google.maps.LatLng(49.5721359, 6.1621197);
-    var mapLuxembourg = new google.maps.Map(document.getElementById('luxembourg-map'), createMapOption(luxCoordinates));
-    addMarker(mapLuxembourg, luxCoordinates);
+    var map;
+    var bounds = new google.maps.LatLngBounds();
+    var mapOptions = {
+        mapTypeId: 'roadmap'
+    };
 
-    var belgiumCoordinates = new google.maps.LatLng(50.8155829, 4.3727268);
-    var mapBelgium = new google.maps.Map(document.getElementById('belgium-map'), createMapOption(belgiumCoordinates));
-    addMarker(mapBelgium, belgiumCoordinates);
+    // Display a map on the page
+    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+    map.setTilt(45);
+
+    // Multiple Markers
+    var markers = [
+        ['AkaBI Luxembourg', 49.5721359, 6.1621197],
+        ['AkaBI Belgium', 50.8155829, 4.3727268]
+    ];
+
+    // Info Window Content
+    var infoWindowContent = [
+        [
+            '<div class="info_content">' +
+                '<h3>AkaBI Luxembourg</h3>' +
+                '<a href="http://www.google.com/maps/place/49.5721359,6.1621197" target="_blank">Rue Roger Wercollier, 15 - L-5890 - Hesperange</a>' +
+            '</div>'
+        ],
+        [
+            '<div class="info_content">' +
+                '<h3>AkaBI Belgium</h3>' +
+                '<a href="http://www.google.com/maps/place/50.8155829,4.3727268" target="_blank">Boulevard de la Cambre, 74 - B-1000 -  Bruxelles</a>' +
+            '</div>'
+        ],
+    ];
+
+    // Display multiple markers on a map
+    var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+    // Loop through our array of markers & place each one on the map  
+    for (i = 0; i < markers.length; i++) {
+        var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+        bounds.extend(position);
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: markers[i][0]
+        });
+
+        // Allow each marker to have an info window    
+        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+            return function () {
+                infoWindow.setContent(infoWindowContent[i][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, i));
+
+        // Automatically center the map fitting all markers on the screen
+        map.fitBounds(bounds);
+    }
+
+    // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function (event) {
+        this.setZoom(7);
+        google.maps.event.removeListener(boundsListener);
+    });
+
 }
-
-google.maps.event.addDomListener(window, 'load', initialize);

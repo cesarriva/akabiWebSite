@@ -79,6 +79,44 @@ ul li {
     font-weight: 400;
 }
 
-.our-clients-section{
+.our-clients-section {
     padding-bottom: 60px;
 }
+
+.alert-danger ul {
+    list-style-type: square;
+}
+
+    .alert-danger ul li {
+        margin-left: 25px;
+        color: #a94442;
+    }
+
+#toast-container {
+    z-index: 999999999;
+}
+
+    #toast-container > div {
+        opacity: 1 !important;
+    }
+
+    #toast-container > .toast {
+        background-image: none !important;
+        opacity: 1 !important;
+    }
+
+        #toast-container > .toast:before {
+            position: relative;
+            font-family: FontAwesome;
+            font-size: 20px;
+            line-height: 18px;
+            float: left;
+            margin-left: -40px;
+            color: #FFF;
+            padding-right: 0.5em;
+            margin-right: 0.5em;
+        }
+
+    #toast-container > .toast-error:before {
+        content: "\f003";
+    }
