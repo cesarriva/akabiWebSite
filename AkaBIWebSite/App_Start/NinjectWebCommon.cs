@@ -65,6 +65,8 @@ namespace AkaBIWebSite.App_Start
         {
             kernel.Bind<IContactService>().To<ContactService>().InRequestScope();
             kernel.Bind<IEmailHandlerService>().To<EmailHandlerService>().InRequestScope();
+            kernel.Bind<IApiService>().To<ApiService>().InRequestScope();
+            kernel.Bind<ITaleevoApiHandlerService>().To<TaleevoApiHandlerService>().InRequestScope();
         }        
     }
 }

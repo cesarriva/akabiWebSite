@@ -1,16 +1,231 @@
-﻿<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
-<h2>Career path goes here</h2>
+﻿@model AkaBIWebSite.Models.CareerPositionsViewModel
+
+@section pageCss{
+    <link href="~/Content/css/career.css" rel="stylesheet" />
+    <link href="~/Content/css/key-facts.css" rel="stylesheet" />
+}
+
+<div class="page-banner careers-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Careers</h2>
+                <p>#CAREERS@AKABI</p>
+            </div>
+
+            <div class="col-md-6" style="text-align: center">
+                <h1 class="page-banner-main-title" data-animation="fadeInDown" data-animation-delay="01">
+                    <strong>People and culture making a GPTW</strong>
+                </h1>
+            </div>
+
+            <div class="col-md-3">
+                <ul class="breadcrumbs">
+                    <li><a href="Home">Home</a></li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="careers-slider">
+    <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slide" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <img class="img-responsive" src="~/Content/images/people-woman-coffee-meeting.jpg" alt="slider">
+                <div class="slider-content">
+                    <div class="col-md-12 text-center">
+                        <h2 class="animated4 white">
+                            <span>Life at <strong>AkaBI</strong></span>
+                        </h2>
+                        <h3 class="animated5 white">
+                            <span>People and culture making a great place to work</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="img-responsive" src="~/Content/images/pexels-photo-job-pos3.jpeg" alt="slider">
+                <div class="slider-content">
+                    <div class="col-md-12 text-center">
+                        <h2 class="animated2 white">
+                            <span>Work <strong>happy</strong>, work <strong>better</strong></span>
+                        </h2>
+                        <h3 class="animated3 white">
+                            <span>#careers@AkaBI</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="left carousel-control" href="#main-slide" data-slide="prev">
+            <span><i class="fa fa-angle-left"></i></span>
+        </a>
+        <a class="right carousel-control" href="#main-slide" data-slide="next">
+            <span><i class="fa fa-angle-right"></i></span>
+        </a>
+    </div>
+</section>
+
+<div id="services-job-offers-section" class="section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+                    <h1>Available positions</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            @foreach (var position in Model.Posts)
+            {
+            <div class="col-md-12">
+                <div class="call-action call-action-boxed call-action-style1 clearfix job-offer-container">
+
+                    <div class="button-side">
+                        <a href="@position.ViewUrl" target="_blank" class="btn-system border-btn btn-large">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            See Details
+                        </a>
+                        <a href="@position.ApplyUrl" target="_blank" class="btn-system border-btn btn-large btn-gray">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            Apply Now
+                        </a>
+                    </div>
+
+                    <h2 class="primary"><strong>Offer:</strong> @position.Title</h2>
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i><strong>  Posted:</strong> <time class="timeago" datetime="@position.CreatedOnIsoFormat"></time></p>
+                </div>
+            </div>
+            }
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <div><h3>Couldn't find the jog you were looking for?<br /> Apply spontaneously, we might have something special for your skills.</h3></div>
+                <div>
+                    <a href="Careers/ApplySpontaneously" target="_blank" class="btn-system btn-large btn-apply-spontaneously">
+                        Apply
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="work-at-akabi-section" class="section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Start Big Heading -->
+                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+                    <h1>Working at <strong>AkaBI</strong></h1>
+                </div>
+                <!-- End Big Heading -->
+                <p class="text-center primary-paragraph">
+                    At AkaBI, you will find a super relaxed atmosphere, where you have autonomy and are encouraged to make decisions
+                    that positively collaborate with the healthy development of the company. We are always looking for new talents,
+                    smart and audacious people, eager to grow personally and professionally.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 whys-work-at-akabi">
+                <div>
+                    <i class="fa fa-users icon-medium" aria-hidden="true"></i>
+                </div>
+                <h4>Collaborative Management</h4>
+                <p>
+                    Good ideas can come from anyone, regardless of position, function or area of expertise. Through a
+                    participatory management model, we encourage employees to get involved and contribute with us.
+                </p>
+            </div>
+
+
+            <div class="col-md-4 whys-work-at-akabi">
+                <div>
+                    <i class="fa fa-child icon-medium" aria-hidden="true"></i>
+                </div>
+                <h4>Quality of Life</h4>
+                <p>
+                    We think first in our employees. At AkaBI, we do everything possible to balance personal and
+                    professional life. Here, you can make real friends, and enjoy great moments in a lot of nice events!
+                </p>
+            </div>
+
+
+            <div class="col-md-4 whys-work-at-akabi">
+                <div>
+                    <i class="fa fa-graduation-cap icon-medium" aria-hidden="true"></i>
+                </div>
+                <h4>Continuous Learning</h4>
+                <p>
+                    We value people who enjoy challenges and are always in search of new knowledge! Working with us, you can take
+                    great advantage of our study partnerships, for a great variety IT/Management certifications.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="section social-events">
+    <div class="container">
+        <div class="section-video-content text-center">
+
+            <h1 class="fittext wite-text uppercase header-custom-font">
+                <strong>Party time!</strong><br />
+            </h1>
+
+            <div class="row key-facts-container">
+                <div class="col-md-3 key-fact-wrapper">
+                    <h2><span class="fa fa-beer key-fact-title key-icon"></span></h2>
+                    <p><span class="key-fact-label">After Work Celebrations</span></p>
+                </div>
+
+                <div class="col-md-3 key-fact-wrapper">
+                    <h2><span class="fa fa-bicycle key-fact-title key-icon"></span></h2>
+                    <p><span class="key-fact-label">Sport Events</span></p>
+                </div>
+
+                <div class="col-md-3 key-fact-wrapper">
+                    <h2><span class="fa fa-tree key-fact-title key-icon"></span></h2>
+                    <p><span class="key-fact-label">Christmas Parties</span></p>
+                </div>
+
+                <div class="col-md-3 key-fact-wrapper">
+                    <h2><span class="fa fa-glass key-fact-title key-icon"></span></h2>
+                    <p><span class="key-fact-label">Fraternization Dinners</span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/career-page.js"></script>
+}
+

@@ -1,0 +1,61 @@
+﻿#main-slide .animated2 strong {
+    color: white;
+}
+
+.job-offer-container {
+    margin-bottom: 40px;
+}
+
+.job-offer-container .fa-calendar{
+    margin-right: 10px;
+}
+
+.careers-banner {
+    background: url('../images/people-woman-coffee-meeting.jpg') top #f9f9f9;
+    display: none;
+}
+
+#careers-slider {
+    display: block;
+}
+
+@media (max-width: 479px) {
+
+    .careers-banner {
+        display: block;
+    }
+
+    #careers-slider {
+        display: none;
+    }
+}
+
+.btn-apply-spontaneously{
+    margin-top: 15px;
+}
+
+#work-at-akabi-section{
+    background-color: #fbfbfb;
+    padding-top: 30px;
+}
+
+.whys-work-at-akabi > div{
+    border-bottom: 1px solid #444;
+    margin-bottom: 15px;
+    text-align:center;
+}
+
+.whys-work-at-akabi i{
+    margin-bottom: 15px;
+}
+
+.whys-work-at-akabi h4 {
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.social-events {
+    background: url(../images/pexels-photo-13918.jpeg) no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+}

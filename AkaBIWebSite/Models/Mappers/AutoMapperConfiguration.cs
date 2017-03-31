@@ -9,6 +9,7 @@ namespace AkaBIWebSite.Models.Mappers
             var config = new MapperConfiguration(x =>
             {
                 x.AddProfile<ViewModelToDtoMappingProfile>();
+                x.AddProfile<DtoToViewModelMappingProfile>();
             });
 
             return config;

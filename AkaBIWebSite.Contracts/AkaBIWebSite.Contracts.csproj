@@ -41,8 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dtos\ContactMessageDto.cs" />
+    <Compile Include="Dtos\JobPositionDto.cs" />
+    <Compile Include="Dtos\CareerPositionsDto.cs" />
+    <Compile Include="Interfaces\IApiService.cs" />
     <Compile Include="Interfaces\IContactService.cs" />
     <Compile Include="Interfaces\IEmailHandlerService.cs" />
+    <Compile Include="Interfaces\ITaleevoApiHandlerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

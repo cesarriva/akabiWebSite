@@ -1,0 +1,29 @@
+﻿.key-facts-container{
+    padding-top: 30px;
+}
+
+.key-fact-wrapper {
+    height: 100px;
+    margin-bottom: 35px
+}
+
+.key-fact-title, .key-fact-label {
+    color: white;
+    display: block;
+    height: 60px
+}
+
+.key-fact-title {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.key-fact-label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.key-icon{
+    margin-top: -10px;
+    margin-bottom: 10px
+}
