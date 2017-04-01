@@ -14,13 +14,30 @@ namespace AkaBIWebSite.Controllers
         }
 
         public ActionResult Index()
+        {   
+            return View();
+        }
+
+        public PartialViewResult JobOffersSection()
         {
             var positionsDto = _taleevoService.GetJobPositions();
 
             var viewModel = Mapper.Map<CareerPositionsViewModel>(positionsDto);
-            
-            return View(viewModel);
+
+            return PartialView("_JobOffers", viewModel);
         }
         
+        [HttpGet]
+        public ActionResult ApplySpontaneously()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ContentResult SubmitSpontaneouslyApplication()
+        {
+            return Json(new { success = true, message = "We received you application, we will contact you soon." });
+        }
+
     }
 }

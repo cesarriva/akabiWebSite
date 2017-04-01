@@ -1,0 +1,56 @@
+﻿@model AkaBIWebSite.Models.CareerPositionsViewModel
+
+<div id="services-job-offers-section" class="section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+                    <h1>Available positions</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            @foreach (var position in Model.Posts)
+            {
+                <div class="col-md-12">
+                    <div class="call-action call-action-boxed call-action-style1 clearfix job-offer-container">
+
+                        <div class="button-side">
+                            <a href="@position.ViewUrl" target="_blank" class="btn-system border-btn btn-large">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                See Details
+                            </a>
+                            <a href="@position.ApplyUrl" target="_blank" class="btn-system border-btn btn-large btn-gray">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                Apply Now
+                            </a>
+                        </div>
+
+                        <h2 class="primary"><strong>Offer:</strong> @position.Title</h2>
+                        <p><i class="fa fa-calendar" aria-hidden="true"></i><strong>  Posted:</strong> <time class="timeago" datetime="@position.CreatedOnIsoFormat"></time></p>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <div>
+                    <h3>
+                        Couldn't find the jog you were looking for?<br />
+                        Apply spontaneously, or send an e-mail to <a href="mailto:job@akabi.eu">job@akabi.eu</a>.<br />
+                        We might have something special for your skills.
+                    </h3>
+                </div>
+                <div>
+                    @Html.ActionLink("Apply", "ApplySpontaneously", "Career", null, new { @class = "btn btn-system btn-large btn-apply-spontaneously" })
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

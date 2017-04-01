@@ -306,6 +306,11 @@
     <Content Include="Views\Home\_OurValuesSection.cshtml" />
     <Content Include="Views\Home\_LocationSection.cshtml" />
     <Content Include="Views\Shared\_OurClients.cshtml" />
+    <Content Include="Views\Career\_CareerSlider.cshtml" />
+    <Content Include="Views\Career\_JobOffers.cshtml" />
+    <Content Include="Views\Career\_WorkAtAkabi.cshtml" />
+    <Content Include="Views\Career\_SocialEvents.cshtml" />
+    <Content Include="Views\Career\ApplySpontaneously.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
