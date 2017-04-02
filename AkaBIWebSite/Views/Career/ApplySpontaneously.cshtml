@@ -82,7 +82,7 @@
                     <div validate-on-submit class="form-group">
                         <label for="officeLocations" class="col-sm-4 control-label label-akabi-form">Preferred location</label>
                         <div class="controls">
-                            <select name="officeLocations" id="officeLocations"
+                            <select name="officeLocations" id="officeLocations" class="form-control"
                                     ng-options="location.name for location in data.availableLocations track by location.id"
                                     ng-model="data.selectedLocation">
                             </select>
