@@ -172,10 +172,12 @@
     <Compile Include="Models\Mappers\DtoToViewModelMappingProfile.cs" />
     <Compile Include="Models\Mappers\ViewModelToDtoMappingProfile.cs" />
     <Compile Include="Models\CareerPositionsViewModel.cs" />
+    <Compile Include="Models\SpontaneousApplyViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\apply-spontaneously.css" />
     <Content Include="Content\css\career.css" />
     <Content Include="Content\css\contact-page.css" />
     <Content Include="Content\css\key-facts.css" />
@@ -198,8 +200,11 @@
     <Content Include="Content\images\people-woman-coffee-meeting.jpg" />
     <Content Include="Content\images\pexels-photo-13918.jpeg" />
     <Content Include="Content\images\pexels-photo-job-pos3.jpeg" />
+    <Content Include="Scripts\angular-file-uploader.js" />
     <Content Include="Scripts\angular-ladda.min.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\AngularApp\CareerPage\careerService.js" />
+    <Content Include="Scripts\AngularApp\CareerPage\spontaneousApplicationJobController.js" />
     <Content Include="Scripts\AngularApp\ContactPage\contactController.js" />
     <Content Include="Scripts\AngularApp\ContactPage\contactService.js" />
     <Content Include="Scripts\AngularApp\ContactPage\validateFieldOnSubmit.js" />
@@ -259,6 +264,7 @@
     <Content Include="Scripts\jquery.fitvids.js" />
     <Content Include="Scripts\jquery.isotope.min.js" />
     <Content Include="Scripts\jquery.lettering.js" />
+    <Content Include="Scripts\jquery.mask.min.js" />
     <Content Include="Scripts\jquery.nicescroll.min.js" />
     <Content Include="Scripts\jquery.parallax.js" />
     <Content Include="Scripts\jquery.slicknav.js" />
@@ -311,9 +317,11 @@
     <Content Include="Views\Career\_WorkAtAkabi.cshtml" />
     <Content Include="Views\Career\_SocialEvents.cshtml" />
     <Content Include="Views\Career\ApplySpontaneously.cshtml" />
+    <Content Include="Views\Shared\_CountryCodeDropDown.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\AngularApp\External\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

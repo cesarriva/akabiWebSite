@@ -31,7 +31,8 @@ namespace AkaBIWebSite
                     "~/Scripts/ladda.min.js",
                     "~/Scripts/angular-ladda.min.js",
                     "~/Scripts/toastr.min.js",
-                    "~/Scripts/jquery.timeago.js"
+                    "~/Scripts/jquery.timeago.js",
+                    "~/Scripts/jquery.mask.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/margoTemplate").Include(

@@ -10,7 +10,7 @@ angular.module("mainAppModule").controller('ContactController',
             $scope.contactData = {};
             $scope.showServerErrors = false;
             $scope.serverErrorMessage = "";
-            $scope.sendingContactMessage = false;
+            $scope.sendingContact = false;
 
             $scope.submitContactForm = function () {
 
@@ -21,7 +21,7 @@ angular.module("mainAppModule").controller('ContactController',
 
                 $scope.showServerErrors = false;
                 $scope.serverErrorMessage = "";
-                $scope.sendingContactMessage = true;
+                $scope.sendingContact = true;
 
                 ContactServiceProvider.sendContactMessage($scope.contactData)
                     .then(
@@ -37,7 +37,7 @@ angular.module("mainAppModule").controller('ContactController',
                             $scope.serverErrorMessage = $sce.trustAsHtml(errorResult.message);
                         })
                     .then(function () {
-                        $scope.sendingContactMessage = false;
+                        $scope.sendingContact = false;
                     });
             };
 

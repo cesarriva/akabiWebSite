@@ -1,1 +1,152 @@
-﻿form here
+﻿@section pageCss{
+    <link href="~/Content/css/apply-spontaneously.css" rel="stylesheet" />
+}
+
+<div class="page-banner apply-spontaneously-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Apply Now</h2>
+                <p>Spontaneous Application</p>
+            </div>
+
+            <div class="col-md-6" style="text-align: center">
+                <h1 class="page-banner-main-title" data-animation="fadeInDown" data-animation-delay="01">
+                    <strong>What do you have in mind?</strong>
+                </h1>
+            </div>
+
+            <div class="col-md-3">
+                <ul class="breadcrumbs">
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="Index">Careers</a></li>
+                    <li>Spontaneous Application</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" ng-controller="SpontaneousApplicationJobController">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <h4 class="classic-title"><span>Spontaneous Application</span></h4>
+
+                <div class="alert alert-danger alert-dismissable" ng-if="showServerErrors">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <div ng-bind-html="serverErrorMessage"></div>
+                </div>
+
+                <form role="form" class="akabi-form" id="job-apply-form" name="jobApplyForm" novalidate method="post" ng-submit="submitApplicationForm()">
+                    <div validate-on-submit class="form-group" ng-class="{'has-error': jobApplyForm.firstName.$invalid && jobApplyForm.firstName.$touched}">
+                        <label for="firstName" class="col-sm-4 control-label label-akabi-form">First Name*</label>
+                        <div class="controls">
+                            <input class="form-control" type="text" id="firstName" name="firstName" ng-model="jobApplication.firstName" ng-required="true">
+                            <span class="help-block" ng-if="jobApplyForm.firstName.$error.required">First Name is required.</span>
+                        </div>
+                    </div>
+                    <div validate-on-submit class="form-group" ng-class="{'has-error': jobApplyForm.lastName.$invalid && jobApplyForm.lastName.$touched}">
+                        <label for="lastName" class="col-sm-4 control-label label-akabi-form">Last Name*</label>
+                        <div class="controls">
+                            <input type="text" class="form-control" id="lastName" name="lastName" ng-model="jobApplication.lastName" ng-required="true">
+                            <span class="help-block" ng-if="jobApplyForm.lastName.$error.required">Last Name is required.</span>
+                        </div>
+                    </div>
+
+                    <div validate-on-submit class="form-group" ng-class="{'has-error': jobApplyForm.countryCode.$invalid && jobApplyForm.countryCode.$touched}">
+                        <label for="countryCode" class="col-sm-4 control-label label-akabi-form">Country Code*</label>
+                        <div class="controls">
+                            @Html.Partial("_CountryCodeDropDown")
+                            <span class="help-block" ng-if="jobApplyForm.countryCode.$error.required">Country Code is required.</span>
+                        </div>
+                    </div>
+
+                    <div validate-on-submit class="form-group" ng-class="{'has-error': jobApplyForm.phoneNumber.$invalid && jobApplyForm.phoneNumber.$touched}">
+                        <label for="phoneNumber" class="col-sm-4 control-label label-akabi-form">Phone Number*</label>
+                        <div class="controls">
+                            <input type="text" class="form-control phone-number" id="phoneNumber" name="phoneNumber" ng-model="jobApplication.phoneNumber" ng-required="true">
+                            <span class="help-block" ng-if="jobApplyForm.phoneNumber.$error.required">Phone Number is required.</span>
+                        </div>
+                    </div>
+                    <div validate-on-submit class="form-group" ng-class="{'has-error': jobApplyForm.email.$invalid && jobApplyForm.email.$touched}">
+                        <label for="email" class="col-sm-4 control-label label-akabi-form">E-Mail*</label>
+                        <div class="controls">
+                            <input type="email" class="email form-control" id="email" name="email" ng-model="jobApplication.email" ng-required="true">
+                            <span class="help-block" ng-if="jobApplyForm.email.$error.required">Email is required.</span>
+                            <span class="help-block" ng-if="!jobApplyForm.email.$error.required && jobApplyForm.email.$invalid">Type a valid E-Mail.</span>
+                        </div>
+                    </div>
+                    <div validate-on-submit class="form-group">
+                        <label for="officeLocations" class="col-sm-4 control-label label-akabi-form">Preferred location</label>
+                        <div class="controls">
+                            <select name="officeLocations" id="officeLocations"
+                                    ng-options="location.name for location in data.availableLocations track by location.id"
+                                    ng-model="data.selectedLocation">
+                            </select>
+                        </div>
+                    </div>
+                    <div validate-on-submit class="form-group">
+                        <label for="desiredPosition" class="col-sm-4 control-label label-akabi-form">Desired Position</label>
+                        <div class="controls">
+                            <input type="text" class="form-control" id="desiredPosition" name="desiredPosition" ng-model="jobApplication.desiredPosition">
+                        </div>
+                    </div>
+                    <div validate-on-submit class="form-group">
+                        <label for="linkedinProfile" class="col-sm-4 control-label label-akabi-form">LinkedIn Profile</label>
+                        <div class="controls">
+                            <input type="text" class="form-control" placeholder="https://www.linkedin.com/in/profile-123456/" id="linkedinProfile" name="linkedinProfile" ng-model="jobApplication.linkedinProfile">
+                        </div>
+                    </div>
+
+                    <div validate-on-submit class="form-group" ng-class="{'has-error': jobApplyForm.cvInputFile.$invalid && jobApplyForm.cvInputFile.$touched}">
+                        <label for="cvInputFile">Attach you CV*</label>
+                        <input id="cvInputFile" 
+                               name="cvInputFile" 
+                               type="file" 
+                               accept=".doc,.docx,.pdf"
+                               ng-model="jobApplication.cv"
+                               ak-file-model="jobApplication.cv"
+                               valid-file 
+                               required>
+                        <span class="help-block help-block-input-file" ng-if="jobApplyForm.cvInputFile.$invalid">A CV is required.</span>
+                    </div>
+
+                    <div validate-on-submit class="form-group" ng-class="{'has-error': jobApplyForm.coverLetter.$invalid && jobApplyForm.coverLetter.$touched}">
+                        <label for="coverLetterInputFile">Attach you Cover Letter*</label>
+                        <input id="coverLetter" 
+                               name="coverLetter" 
+                               type="file" 
+                               accept=".doc,.docx,.pdf"
+                               ng-model="jobApplication.coverLetter" 
+                               ak-file-model="jobApplication.coverLetter" 
+                               valid-file 
+                               required>
+                        <span class="help-block help-block-input-file" ng-if="jobApplyForm.coverLetter.$invalid">A Cover Letter is required.</span>
+                        <p class="text-allowed-files"><strong>Allowed types: .pdf, .doc or .docx </strong></p>
+                    </div>
+
+                    <button ladda="sendingContactMessage" type="submit" id="submit" class="btn btn-system btn-large">Send</button>
+                </form>
+
+            </div>
+
+            <div class="col-md-4">
+                <h4 class="classic-title"><span>Apply by E-Mail</span></h4>
+
+                <p>If you prefer, send your CV and a cover letter by email:</p>
+
+                <ul class="icons-list single-contact-email">
+                    <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> <a href="mailto:job@akabi.eu">job@akabi.eu</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/career-page.js"></script>
+}

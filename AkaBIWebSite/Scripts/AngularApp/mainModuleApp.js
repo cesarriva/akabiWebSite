@@ -1,6 +1,6 @@
 ﻿'use strict'
 
-var mainModule = angular.module('mainAppModule', ['angular-ladda']);
+var mainModule = angular.module('mainAppModule', ['angular-ladda', 'akFileUploader']);
 
 mainModule.config(function (laddaProvider) {
     laddaProvider.setOption({
@@ -17,7 +17,7 @@ mainModule.run(function () {
         "positionClass": "toast-bottom-right",
         "preventDuplicates": false,
         "onclick": null,
-        "showDuration": "300",
+        "showDuration": "5000",
         "hideDuration": "1000",
         "timeOut": "5000",
         "extendedTimeOut": "1000",

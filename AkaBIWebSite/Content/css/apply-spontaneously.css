@@ -1,0 +1,12 @@
+﻿.apply-spontaneously-banner {
+    background: url('../images/pexels-photo-typing.jpg') center #f9f9f9;
+}
+
+.text-allowed-files {
+    display: block !important;
+    margin-top: 15px;
+}
+
+.help-block-input-file{
+    display: block;
+}

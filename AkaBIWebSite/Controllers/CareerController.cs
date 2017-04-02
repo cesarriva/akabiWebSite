@@ -34,7 +34,7 @@ namespace AkaBIWebSite.Controllers
         }
 
         [HttpPost]
-        public ContentResult SubmitSpontaneouslyApplication()
+        public ContentResult SubmitSpontaneouslyApplication(SpontaneousApplyViewModel jobApplication)
         {
             return Json(new { success = true, message = "We received you application, we will contact you soon." });
         }

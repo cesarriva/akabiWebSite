@@ -1114,8 +1114,9 @@ input[type="submit"] {
 }
 
 .widget-search input[type="search"],
-#contact-form input[type="text"],
-#contact-form textarea,
+.akabi-form input[type="text"],
+.akabi-form select,
+.akabi-form textarea,
 #respond input[type="text"],
 #respond textarea, .email {
     color: black;
@@ -1138,9 +1139,10 @@ input[type="submit"] {
 }
 
     .widget-search input[type="search"]:focus,
-    #contact-form input[type="text"]:focus,
-    #contact-form input[type="email"]:focus,
-    #contact-form textarea:focus,
+    .akabi-form input[type="text"]:focus,
+    .akabi-form input[type="email"]:focus,
+    .akabi-form select:focus,
+    .akabi-form textarea:focus,
     #respond input[type="text"]:focus,
     #respond textarea:focus {
         border-color: #ddd;

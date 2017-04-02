@@ -19,30 +19,34 @@
                     <div ng-bind-html="serverErrorMessage"></div>
                 </div>
 
-                <form role="form" class="contact-form" id="contact-form" name="contactForm" novalidate method="post" ng-submit="submitContactForm()">
+                <form role="form" class="akabi-form" id="contact-form" name="contactForm" novalidate method="post" ng-submit="submitContactForm()">
                     <div validate-on-submit class="form-group" ng-class="{'has-error': contactForm.name.$invalid && contactForm.name.$touched}">
+                        <label for="name" class="col-sm-4 control-label label-akabi-form">Name*</label>
                         <div class="controls">
-                            <input class="form-control" type="text" id="name" name="name" placeholder="Name" ng-model="contactData.name" ng-required="true">
+                            <input class="form-control" type="text" id="name" name="name" ng-model="contactData.name" ng-required="true">
                             <span class="help-block" ng-if="contactForm.name.$error.required">Name is required.</span>
                         </div>
                     </div>
                     <div validate-on-submit class="form-group" ng-class="{'has-error': contactForm.email.$invalid && contactForm.email.$touched}">
+                        <label for="email" class="col-sm-4 control-label label-akabi-form">E-mail*</label>
                         <div class="controls">
-                            <input type="email" class="email form-control" placeholder="Email" id="email" name="email" ng-model="contactData.email" ng-required="true">
-                            <span class="help-block" ng-if="contactForm.email.$error.required">Email is required.</span>
-                            <span class="help-block" ng-if="!contactForm.email.$error.required && contactForm.email.$invalid">Type a valid Email.</span>
+                            <input type="email" class="email form-control" id="email" name="email" ng-model="contactData.email" ng-required="true">
+                            <span class="help-block" ng-if="contactForm.email.$error.required">E-Mail is required.</span>
+                            <span class="help-block" ng-if="!contactForm.email.$error.required && contactForm.email.$invalid">Type a valid E-Mail.</span>
                         </div>
                     </div>
                     <div validate-on-submit class="form-group" ng-class="{'has-error': contactForm.subject.$invalid && contactForm.subject.$touched}">
+                        <label for="subject" class="col-sm-4 control-label label-akabi-form">Subject*</label>
                         <div class="controls">
-                            <input type="text" class="requiredField form-control" placeholder="Subject" id="subject" name="subject" ng-model="contactData.subject" ng-required="true">
+                            <input type="text" class="requiredField form-control" id="subject" name="subject" ng-model="contactData.subject" ng-required="true">
                             <span class="help-block" ng-if="contactForm.subject.$error.required">Subject is required.</span>
                         </div>
                     </div>
 
                     <div validate-on-submit class="form-group" ng-class="{'has-error': contactForm.message.$invalid && contactForm.message.$touched}">
+                        <label for="message" class="col-sm-4 control-label label-akabi-form">Message*</label>
                         <div class="controls">
-                            <textarea class="form-control" rows="7" placeholder="Message" id="message" name="message" ng-model="contactData.message" ng-required="true"></textarea>
+                            <textarea class="form-control" rows="7" id="message" name="message" ng-model="contactData.message" ng-required="true"></textarea>
                             <span class="help-block" ng-if="contactForm.message.$error.required">A message is required.</span>
                         </div>
                     </div>
@@ -69,7 +73,7 @@
                 </ul>
 
                 <ul class="icons-list single-contact-email">
-                    <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> info@akabi.eu</li>
+                    <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> <a href="mailto:info@akabi.eu">info@akabi.eu</a></li>
                 </ul>
 
                 <div class="hr1" style="margin-bottom:15px;"></div>

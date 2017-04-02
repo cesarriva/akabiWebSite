@@ -120,3 +120,15 @@ ul li {
     #toast-container > .toast-error:before {
         content: "\f003";
     }
+
+.form-group .help-block {
+    display: none;
+}
+
+.form-group.has-error .help-block {
+    display: block;
+}
+
+.label-akabi-form{
+    padding: 0;
+}
