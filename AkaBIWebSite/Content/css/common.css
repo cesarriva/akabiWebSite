@@ -38,6 +38,11 @@
     font-size: 46px;
 }
 
+.header-custom-font-2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+}
+
 .primary-paragraph {
     font-size: 16px;
     line-height: 27px;

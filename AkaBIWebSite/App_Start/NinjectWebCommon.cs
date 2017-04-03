@@ -67,6 +67,7 @@ namespace AkaBIWebSite.App_Start
             kernel.Bind<IEmailHandlerService>().To<EmailHandlerService>().InRequestScope();
             kernel.Bind<IApiService>().To<ApiService>().InRequestScope();
             kernel.Bind<ITaleevoApiHandlerService>().To<TaleevoApiHandlerService>().InRequestScope();
+            kernel.Bind<ICareerService>().To<CareerService>().InRequestScope();
         }        
     }
 }

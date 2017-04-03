@@ -7,5 +7,6 @@
         public const string SmtpUserNameKey = "SmtpUserName";
         public const string SmtpUserPasswordKey = "SmtpUserPassword";
         public const string ContactToKey = "ContactTo";
+        public const string JobApplicationToKey = "JobApplicationTo";
     }
 }
