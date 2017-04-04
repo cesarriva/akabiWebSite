@@ -158,7 +158,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
-    <Compile Include="Controllers\CareerController.cs" />
+    <Compile Include="Controllers\CareersController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OurCompanyController.cs" />
@@ -304,7 +304,7 @@
     <Content Include="Views\OurCompany\Index.cshtml" />
     <Content Include="Views\Services\BiServices.cshtml" />
     <Content Include="Views\Services\DevelopmentServices.cshtml" />
-    <Content Include="Views\Career\Index.cshtml" />
+    <Content Include="Views\Careers\Index.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
     <Content Include="Views\Home\_VideoSection.cshtml" />
     <Content Include="Views\Home\_WhoWeAreSection.cshtml" />
@@ -312,11 +312,11 @@
     <Content Include="Views\Home\_OurValuesSection.cshtml" />
     <Content Include="Views\Home\_LocationSection.cshtml" />
     <Content Include="Views\Shared\_OurClients.cshtml" />
-    <Content Include="Views\Career\_CareerSlider.cshtml" />
-    <Content Include="Views\Career\_JobOffers.cshtml" />
-    <Content Include="Views\Career\_WorkAtAkabi.cshtml" />
-    <Content Include="Views\Career\_SocialEvents.cshtml" />
-    <Content Include="Views\Career\ApplySpontaneously.cshtml" />
+    <Content Include="Views\Careers\_CareerSlider.cshtml" />
+    <Content Include="Views\Careers\_JobOffers.cshtml" />
+    <Content Include="Views\Careers\_WorkAtAkabi.cshtml" />
+    <Content Include="Views\Careers\_SocialEvents.cshtml" />
+    <Content Include="Views\Careers\ApplySpontaneously.cshtml" />
     <Content Include="Views\Shared\_CountryCodeDropDown.cshtml" />
   </ItemGroup>
   <ItemGroup>

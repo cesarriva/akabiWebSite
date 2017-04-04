@@ -14,7 +14,7 @@ angular.module("mainAppModule").factory('CareerServiceProvider',
             }
 
             var sendJobApplication = function (jobApplication) {
-                return akFileUploaderService.saveModel(jobApplication, "/Career/SubmitSpontaneouslyApplication");
+                return akFileUploaderService.saveModel(jobApplication, "/Careers/SubmitSpontaneouslyApplication");
             };
 
             return {

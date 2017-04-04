@@ -22,7 +22,10 @@
                            method: "POST",
                            data: getModelAsFormData(data),
                            transformRequest: angular.identity,
-                           headers: { 'Content-Type': undefined }
+                           headers: {
+                               'Content-Type': undefined,
+                               'X-Requested-With': 'XMLHttpRequest'
+                           }
                        })
                        .then(function (result) {
                            deferred.resolve(result.data);

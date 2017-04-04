@@ -71,7 +71,6 @@ namespace AkaBIWebSite.Controllers
         /// <param name="filterContext"></param>
         protected override void OnException(ExceptionContext filterContext)
         {
-            //TODO: Log the error with Log4Net
             if (IsAjax(filterContext))
             {
                 var exception = filterContext.Exception;

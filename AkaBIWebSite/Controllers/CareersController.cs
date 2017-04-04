@@ -5,12 +5,12 @@ using System.Web.Mvc;
 
 namespace AkaBIWebSite.Controllers
 {
-    public class CareerController : BaseController
+    public class CareersController : BaseController
     {
         private readonly ITaleevoApiHandlerService _taleevoService;
         private readonly ICareerService _careerService;
 
-        public CareerController(ITaleevoApiHandlerService taleevoService, ICareerService careerService)
+        public CareersController(ITaleevoApiHandlerService taleevoService, ICareerService careerService)
         {
             _taleevoService = taleevoService;
             _careerService = careerService;
