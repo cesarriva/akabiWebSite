@@ -16,6 +16,9 @@ namespace AkaBIWebSite.Controllers
         {
             var posts = _socialApiService.GetFacebookPostsForPage();
             
+            /*Convert to a view model with:
+             */
+
             return View();
         }
     }
