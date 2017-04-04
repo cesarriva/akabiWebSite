@@ -68,6 +68,7 @@ namespace AkaBIWebSite.App_Start
             kernel.Bind<IApiService>().To<ApiService>().InRequestScope();
             kernel.Bind<ITaleevoApiHandlerService>().To<TaleevoApiHandlerService>().InRequestScope();
             kernel.Bind<ICareerService>().To<CareerService>().InRequestScope();
+            kernel.Bind<ISocialApiService>().To<SocialApiService>().InRequestScope();
         }        
     }
 }

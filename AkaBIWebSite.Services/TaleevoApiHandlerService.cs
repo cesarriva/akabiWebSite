@@ -15,15 +15,15 @@ namespace AkaBIWebSite.Services
          
         public TaleevoApiHandlerService(IApiService apiService)
         {
-            BaseUrl = ConfigSettingsHandler.ReadSetting("TaleevoBaseUrlApi");
-            TaleevoCompanyId = new Guid(ConfigSettingsHandler.ReadSetting("TaleevoCompanyId"));
+            BaseUrl = ConfigSettingsHandler.ReadSetting(Constants.TaleevoBaseUrlApiKey);
+            TaleevoCompanyId = new Guid(ConfigSettingsHandler.ReadSetting(Constants.TaleevoCompanyIdKey));
 
             _apiService = apiService;
         }
 
         public CareerPositionsDto GetJobPositions()
         {
-            var apiUrl = string.Format("Post/OpenPosts/{0}", TaleevoCompanyId);
+            var apiUrl = string.Format(ConfigSettingsHandler.ReadSetting(Constants.TaleevoGetPositionsUrlKey), TaleevoCompanyId);
 
             var httpResponse = _apiService.GetResponse(BaseUrl, apiUrl);
 
