@@ -210,6 +210,7 @@
     <Content Include="Content\css\toastr.min.css" />
     <Content Include="Content\images\people-woman-coffee-meeting.jpg" />
     <Content Include="Content\images\pexels-photo-13918.jpeg" />
+    <Content Include="Content\images\pexels-photo-42384.jpeg" />
     <Content Include="Content\images\pexels-photo-job-pos3.jpeg" />
     <Content Include="Content\images\team.jpg" />
     <Content Include="Scripts\angular-file-uploader.js" />
