@@ -1,4 +1,5 @@
 ﻿using AkaBIWebSite.Contracts.Dtos;
+using System.Collections.Generic;
 
 namespace AkaBIWebSite.Contracts.Interfaces
 {
@@ -7,5 +8,7 @@ namespace AkaBIWebSite.Contracts.Interfaces
         FacebookPagePostsDto GetFacebookPostsForPage();
 
         FacebookSocialPostDto GetFacebookPostById(string postId);
+
+        List<FacebookSocialPostDto> GetFacebookTopPopularPosts(List<FacebookSocialPostDto> posts, int quantity);
     }
 }

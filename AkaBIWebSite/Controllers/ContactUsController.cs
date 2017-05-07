@@ -16,6 +16,7 @@ namespace AkaBIWebSite.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.Title = "AkaBI | Contact Us";
             return View();
         }
 

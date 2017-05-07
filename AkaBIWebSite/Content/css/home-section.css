@@ -54,6 +54,11 @@
     padding-right: 16px;
 }
 
+    .who-we-are-right-side > img {
+        height:400px; 
+        width:100%;
+    }
+
 #services-section {
     background-color: #fbfbfb;
 }
@@ -179,6 +184,10 @@
         padding-left: 30px !important;
         padding-right: 30px !important;
     }
+
+    .who-we-are-right-side > img {
+        height:500px; 
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -209,5 +218,9 @@
     .who-we-are-left-side {
         padding-left: 30px !important;
         padding-right: 30px !important;
+    }
+
+    .who-we-are-right-side > img {
+        height:250px; 
     }
 }

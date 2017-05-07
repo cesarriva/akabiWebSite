@@ -25,5 +25,11 @@ namespace AkaBIWebSite.Contracts.Dtos
 
         [JsonProperty("permalink_url")]
         public Uri FacebookFeedPostLink { get; set; }
+
+        [JsonProperty("shares")]
+        public FacebookSharesDto FacebookShares { get; set; }
+
+        [JsonProperty("likes")]
+        public FacebookLikesDto FacebookLikes { get; set; }
     }
 }

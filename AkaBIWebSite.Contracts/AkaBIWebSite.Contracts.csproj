@@ -46,11 +46,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dtos\ContactMessageDto.cs" />
+    <Compile Include="Dtos\FacebookLikesDto.cs" />
     <Compile Include="Dtos\FileAttachmentDto.cs" />
     <Compile Include="Dtos\JobPositionDto.cs" />
     <Compile Include="Dtos\CareerPositionsDto.cs" />
     <Compile Include="Dtos\FacebookSocialPostDto.cs" />
     <Compile Include="Dtos\FacebookPagePostsDto.cs" />
+    <Compile Include="Dtos\FacebookSharesDto.cs" />
     <Compile Include="Dtos\SpontaneousApplyDto.cs" />
     <Compile Include="Interfaces\IApiService.cs" />
     <Compile Include="Interfaces\ICareerService.cs" />

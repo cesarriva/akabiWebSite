@@ -6,7 +6,7 @@ namespace AkaBIWebSite.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "AkaBI S.a.rl | Home";
+            ViewBag.Title = "AkaBI | Home";
             return View();
         }
 

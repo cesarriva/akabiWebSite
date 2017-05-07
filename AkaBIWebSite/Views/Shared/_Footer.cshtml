@@ -24,7 +24,7 @@
             <!-- Start Join Us Widget -->
             <div class="col-md-4 col-xs-12">
                 <div class="footer-widget widget-join-us">
-                    <h4>Join us!<span class="head-line"></span></h4>
+                    <h4>Join us!@*<span class="head-line"></span>*@</h4>
                     <p>We are always looking for talented people to strengthen and expand our <strong>Business Intelligence</strong> and <strong>Development</strong> teams.</p>
                     @Html.ActionLink("Check out the careers", "Index", "Careers", null, new { @class = "btn btn-system btn-small" })
                 </div>
@@ -35,8 +35,8 @@
             <!-- Start Social Links Widget -->
             <div class="col-md-4 col-xs-12">
                 <div class="footer-widget social-widget">
-                    <h4>Follow Us<span class="head-line"></span></h4>
-                    <p>Follow us in the Facebook and LinkedIn and stay tuned with all BI and Software Development related news.</p>
+                    <h4>Follow Us@*<span class="head-line"></span>*@</h4>
+                    <p>Follow us on Facebook and LinkedIn and stay tuned with all BI and Software Development related news.</p>
                     <ul class="social-icons">
                         <li>
                             <a class="facebook" target="_blank" href="https://www.facebook.com/Akabi-191315314301345/?fref=ts"><i class="fa fa-facebook"></i></a>
@@ -57,23 +57,17 @@
         <div class="copyright-section">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2017 AkaBI S.a.rl - All Rights Reserved <a rel="nofollow" href="http://www.akabi.eu/">AkaBI</a> </p>
+                    <p>&copy; <a rel="nofollow" href="http://www.akabi.eu">2017 AkaBI</a> - All Rights Reserved </p>
                 </div>
-                <!-- .col-md-6 -->
+                @*<!-- .col-md-6 -->
                 <div class="col-md-6">
                     <ul class="footer-nav">
                         <li>
-                            <a href="#">Sitemap</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
+                            @Html.ActionLink("Contact", "Index", "ContactUs")
                         </li>
                     </ul>
                 </div>
-                <!-- .col-md-6 -->
+                <!-- .col-md-6 -->*@
             </div>
             <!-- .row -->
         </div>

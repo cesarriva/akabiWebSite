@@ -20,7 +20,7 @@
         public const string FacebookClientIdKey = "FacebookClientId";
         public const string FacebookClientSecretKey = "FacebookClientSecret";
         public const string FacebookPageIdKey = "FacebookPageId";
-        public const string GetAllPagePostsUrlFormat = "{0}/posts?fields=created_time,message,id,full_picture,picture,description,link,permalink_url";
+        public const string GetAllPagePostsUrlFormat = "{0}/posts?fields=created_time,message,id,full_picture,picture,description,link,permalink_url,likes,shares";
         public const string GetPostByIdUrlFormat = "{0}?fields=description,created_time,full_picture,message,link,permalink_url,picture";
     }
 }

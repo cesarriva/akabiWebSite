@@ -1,0 +1,26 @@
+﻿@model List<AkaBIWebSite.Models.FullPostViewModel>
+
+<div class="col-md-9 blog-box">
+
+    @foreach (var post in Model)
+    {
+        <div class="blog-post standard-post">
+
+            <div class="post-head">
+                <a href="#">
+                    <img alt="" src="@post.FullPictureUrl">
+                </a>
+            </div>
+
+            <div class="post-content">
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+                <ul class="post-meta">
+                    <li>By <a href="#"><strong>AkaBI</strong></a></li>
+                    <li>@post.CreationDateFormatted</li>
+                </ul>
+                <p class="text-justify">@post.PostMessageTruncated</p>
+                <a class="main-button" href="News/PostDetails/@post.Id">Read More <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    }
+</div>

@@ -171,14 +171,18 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\FullPostViewModel.cs" />
     <Compile Include="Models\JobPositionViewModel.cs" />
     <Compile Include="Models\ContactFormViewModel.cs" />
     <Compile Include="Models\Mappers\AutoMapperConfiguration.cs" />
     <Compile Include="Models\Mappers\DtoToViewModelMappingProfile.cs" />
     <Compile Include="Models\Mappers\ViewModelToDtoMappingProfile.cs" />
     <Compile Include="Models\CareerPositionsViewModel.cs" />
+    <Compile Include="Models\NewsPageViewModel.cs" />
+    <Compile Include="Models\PreviewPostSideBarViewModel.cs" />
     <Compile Include="Models\SpontaneousApplyViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\StringExtenstions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\animate.css" />
@@ -187,6 +191,7 @@
     <Content Include="Content\css\contact-page.css" />
     <Content Include="Content\css\key-facts.css" />
     <Content Include="Content\css\ladda-themeless.min.css" />
+    <Content Include="Content\css\news.css" />
     <Content Include="Content\css\services.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\common.css" />
@@ -205,6 +210,7 @@
     <Content Include="Content\images\people-woman-coffee-meeting.jpg" />
     <Content Include="Content\images\pexels-photo-13918.jpeg" />
     <Content Include="Content\images\pexels-photo-job-pos3.jpeg" />
+    <Content Include="Content\images\team.jpg" />
     <Content Include="Scripts\angular-file-uploader.js" />
     <Content Include="Scripts\angular-ladda.min.js" />
     <Content Include="Scripts\angular.min.js" />
@@ -324,6 +330,9 @@
     <Content Include="Views\Careers\ApplySpontaneously.cshtml" />
     <Content Include="Views\Shared\_CountryCodeDropDown.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\_RightSidebar.cshtml" />
+    <Content Include="Views\News\_PostsLeftSide.cshtml" />
+    <Content Include="Views\News\PostDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

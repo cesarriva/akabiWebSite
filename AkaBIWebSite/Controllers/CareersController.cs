@@ -17,7 +17,8 @@ namespace AkaBIWebSite.Controllers
         }
 
         public ActionResult Index()
-        {   
+        {
+            ViewBag.Title = "AkaBI | Careers";
             return View();
         }
 

@@ -3,6 +3,9 @@ using AkaBIWebSite.Contracts.Dtos;
 using Facebook;
 using AkaBIWebSite.Infrastructure;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace AkaBIWebSite.Services
 {
@@ -56,6 +59,15 @@ namespace AkaBIWebSite.Services
             var result = JsonConvert.DeserializeObject<FacebookSocialPostDto>(jsonData);
 
             return result;
+        }
+
+        public List<FacebookSocialPostDto> GetFacebookTopPopularPosts(List<FacebookSocialPostDto> posts, int quantityToTake)
+        {
+            var orderedByPopulatiry = posts.OrderByDescending(x => x.FacebookLikes != null ? x.FacebookLikes.Likes.Count : 0)
+                                           .OrderByDescending(x => x.FacebookShares != null ? x.FacebookShares.Count : 0).ToList();
+
+            var result = orderedByPopulatiry.Take(quantityToTake).ToList();
+            return result; 
         }
 
         #endregion

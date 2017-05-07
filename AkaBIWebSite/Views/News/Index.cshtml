@@ -1,1 +1,32 @@
-﻿<h1>news content here</h1>
+﻿@model AkaBIWebSite.Models.NewsPageViewModel
+
+@section pageCss{
+    <link href="~/Content/css/news.css" rel="stylesheet" />
+}
+
+<div class="page-banner news-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>News</h2>
+                <p>AkaBI's Last Updates</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumbs">
+                    <li><a href="Home">Home</a></li>
+                    <li>News</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="container">
+        <div class="row blog-page">
+            @Html.Partial("_PostsLeftSide", Model.ListOfPosts)
+            @Html.Partial("_RightSidebar", Model)
+        </div>
+    </div>
+</div>
+

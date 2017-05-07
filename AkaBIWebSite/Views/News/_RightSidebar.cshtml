@@ -1,0 +1,41 @@
+﻿@model AkaBIWebSite.Models.NewsPageViewModel
+
+<div class="col-md-3 sidebar right-sidebar">
+    @*<div class="widget widget-popular-posts">
+        <h4>Last News <span class="head-line"></span></h4>
+        <ul>
+            @foreach (var preview in Model.SideBarLastPosts)
+            {
+                <li>
+                    <div class="widget-thumb">
+                        <a href="#"><img src="@preview.SmallPictureUrl" alt=""></a>
+                    </div>
+                    <div class="widget-content">
+                        <h5><a href="#">@preview.PostMessageTruncated</a></h5>
+                        <span>@preview.CreationDateFormatted</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            }
+        </ul>
+    </div>*@
+
+    <div class="widget widget-popular-posts">
+        <h4>Popular Post <span class="head-line"></span></h4>
+        <ul>
+            @foreach (var preview in Model.SideBarLastPosts)
+            {
+                <li>
+                    <div class="widget-thumb">
+                        <a href="#"><img src="@preview.SmallPictureUrl" alt=""></a>
+                    </div>
+                    <div class="widget-content">
+                        <h5><a href="#">@preview.PostMessageTruncated</a></h5>
+                        <span>@preview.CreationDateFormatted</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
