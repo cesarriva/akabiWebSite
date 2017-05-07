@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Dtos\ContactMessageDto.cs" />
     <Compile Include="Dtos\FacebookLikesDto.cs" />
+    <Compile Include="Dtos\FacebookPagingDto.cs" />
     <Compile Include="Dtos\FileAttachmentDto.cs" />
     <Compile Include="Dtos\JobPositionDto.cs" />
     <Compile Include="Dtos\CareerPositionsDto.cs" />

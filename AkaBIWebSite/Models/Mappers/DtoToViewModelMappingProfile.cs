@@ -1,6 +1,5 @@
 ﻿using AkaBIWebSite.Contracts.Dtos;
 using AutoMapper;
-using System.Linq;
 
 namespace AkaBIWebSite.Models.Mappers
 {
@@ -14,9 +13,10 @@ namespace AkaBIWebSite.Models.Mappers
             CreateMap<FacebookSocialPostDto, FullPostViewModel>();
             CreateMap<FacebookSocialPostDto, PreviewPostSideBarViewModel>();
 
+            CreateMap<FacebookPagingDto, FacebookPagingViewModel>();
+
             CreateMap<FacebookPagePostsDto, NewsPageViewModel>()
-                .ForMember(dest => dest.ListOfPosts, opt => opt.MapFrom(src => src.FacebookPosts))
-                .ForMember(dest => dest.SideBarLastPosts, opt => opt.MapFrom(src => src.FacebookPosts.Take(3).ToList()));
+                .ForMember(dest => dest.ListOfPosts, opt => opt.MapFrom(src => src.FacebookPosts));
         }
     }
 }

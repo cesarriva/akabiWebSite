@@ -7,5 +7,8 @@ namespace AkaBIWebSite.Contracts.Dtos
     {
         [JsonProperty("data")]
         public List<FacebookSocialPostDto> FacebookPosts { get; set; }
+
+        [JsonProperty("paging")]
+        public FacebookPagingDto PagingSettings { get; set; }
     }
 }

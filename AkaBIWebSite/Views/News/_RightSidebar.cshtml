@@ -1,10 +1,10 @@
 ﻿@model AkaBIWebSite.Models.NewsPageViewModel
 
 <div class="col-md-3 sidebar right-sidebar">
-    @*<div class="widget widget-popular-posts">
-        <h4>Last News <span class="head-line"></span></h4>
+    <div class="widget widget-popular-posts">
+        <h4>Popular News <span class="head-line"></span></h4>
         <ul>
-            @foreach (var preview in Model.SideBarLastPosts)
+            @foreach (var preview in Model.SideBarPopularPosts)
             {
                 <li>
                     <div class="widget-thumb">
@@ -18,10 +18,9 @@
                 </li>
             }
         </ul>
-    </div>*@
-
+    </div>
     <div class="widget widget-popular-posts">
-        <h4>Popular Post <span class="head-line"></span></h4>
+        <h4>Last News <span class="head-line"></span></h4>
         <ul>
             @foreach (var preview in Model.SideBarLastPosts)
             {

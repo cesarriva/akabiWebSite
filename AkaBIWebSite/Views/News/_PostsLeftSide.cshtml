@@ -1,8 +1,25 @@
-﻿@model List<AkaBIWebSite.Models.FullPostViewModel>
+﻿@model AkaBIWebSite.Models.NewsPageViewModel
 
 <div class="col-md-9 blog-box">
 
-    @foreach (var post in Model)
+    <div id="pagination">
+        @if (Model.PagingSettings != null)
+        {
+            if (Model.PagingSettings.PreviusPostsUrl != null)
+            {
+                @Html.ActionLink("Previous", "PreviousPage", "News", null, new { @class = "next-page" })
+            }
+
+            if (Model.PagingSettings.NextPostsUrl != null)
+            {
+                @Html.ActionLink("Next", "NextPage", "News", null, new { @class = "next-page" })
+            }
+        }
+    </div>
+
+    <hr />
+
+    @foreach (var post in Model.ListOfPosts)
     {
         <div class="blog-post standard-post">
 
@@ -23,4 +40,19 @@
             </div>
         </div>
     }
+
+    <div id="pagination">
+        @if (Model.PagingSettings != null)
+        {
+            if (Model.PagingSettings.PreviusPostsUrl != null)
+            {
+                @Html.ActionLink("Previous", "PreviousPage", "News", null, new { @class = "next-page" })
+            }
+
+            if (Model.PagingSettings.NextPostsUrl != null)
+            {
+                @Html.ActionLink("Next", "NextPage", "News", null, new { @class = "next-page" })
+            }
+        }
+    </div>
 </div>

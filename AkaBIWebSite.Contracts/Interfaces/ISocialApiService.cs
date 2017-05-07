@@ -1,14 +1,19 @@
 ﻿using AkaBIWebSite.Contracts.Dtos;
+using System;
 using System.Collections.Generic;
 
 namespace AkaBIWebSite.Contracts.Interfaces
 {
     public interface ISocialApiService
     {
-        FacebookPagePostsDto GetFacebookPostsForPage();
+        FacebookPagePostsDto GetInitialFacebookPosts();
+
+        FacebookPagePostsDto GetInitialFacebookPosts(Uri pageUrl);
 
         FacebookSocialPostDto GetFacebookPostById(string postId);
 
-        List<FacebookSocialPostDto> GetFacebookTopPopularPosts(List<FacebookSocialPostDto> posts, int quantity);
+        List<FacebookSocialPostDto> GetFacebookTopPopularPosts(int quantity);
+
+        List<FacebookSocialPostDto> GetFacebookLastPosts(int quantity);
     }
 }

@@ -3736,6 +3736,7 @@ ul.post-meta {
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
+    font-weight: bold;
 }
 
     #pagination span.current {
@@ -3749,6 +3750,7 @@ ul.post-meta {
 #pagination .all-pages, #pagination .next-page {
     width: auto;
     padding: 0 14px;
+    margin-left: 5px;
 }
 
 

@@ -7,5 +7,7 @@ namespace AkaBIWebSite.Models
         public List<FullPostViewModel> ListOfPosts { get; set; }
         public List<PreviewPostSideBarViewModel> SideBarLastPosts { get; set; }
         public List<PreviewPostSideBarViewModel> SideBarPopularPosts { get; set; }
+
+        public FacebookPagingViewModel PagingSettings { get; set; }
     }
 }

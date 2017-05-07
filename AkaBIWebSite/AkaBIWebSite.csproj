@@ -171,6 +171,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\FacebookPagingViewModel.cs" />
     <Compile Include="Models\FullPostViewModel.cs" />
     <Compile Include="Models\JobPositionViewModel.cs" />
     <Compile Include="Models\ContactFormViewModel.cs" />
